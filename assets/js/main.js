@@ -212,19 +212,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* -------------------- Collapsible Project Cards -------------------- */
   document.querySelectorAll('.project-card').forEach(card => {
-    const actions = card.querySelector('.project-card-actions');
-    if (!actions) return;
+    const body = card.querySelector('.project-card-body');
+    const footer = card.querySelector('.project-card-footer');
+    if (!body || !footer) return;
+
+    const wrap = document.createElement('div');
+    wrap.className = 'project-card-toggle-wrap';
 
     const btn = document.createElement('button');
     btn.className = 'project-card-toggle';
-    btn.innerHTML = `<span data-toggle-label>Details</span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>`;
-    actions.prepend(btn);
+    btn.innerHTML = `<span data-toggle-label>Details</span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>`;
+    wrap.appendChild(btn);
+    card.insertBefore(wrap, footer);
 
     btn.addEventListener('click', () => {
       const isExpanded = card.classList.toggle('expanded');
       btn.querySelector('[data-toggle-label]').textContent = isExpanded
         ? (currentLang === 'de' ? 'Weniger' : 'Less')
-        : (currentLang === 'de' ? 'Details' : 'Details');
+        : 'Details';
     });
   });
 

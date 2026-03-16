@@ -1084,6 +1084,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-direction: column;
   position: relative;
+  min-height: 380px;
 }
 .project-card::before {
   content: '';
@@ -1105,65 +1106,81 @@ img { max-width: 100%; display: block; }
 }
 
 .project-card-header {
-  padding: 2rem 2rem 1.2rem;
-}
-/* Tags now live in the header — give them breathing room */
-.project-card-header .project-tags {
-  margin-top: 0.9rem;
+  padding: 1.6rem 2rem 1rem;
 }
 .project-card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
 }
 .project-card-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.3rem;
+  line-height: 1.35;
 }
 .project-card-subtitle {
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   color: var(--glow-purple);
   font-weight: 600;
   margin-bottom: 0.3rem;
+  line-height: 1.4;
 }
 .project-card-date {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
 }
 .project-card-partner {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-size: 0.78rem;
+  gap: 6px;
+  font-size: 0.75rem;
   font-weight: 600;
-  color: var(--text-secondary);
-  background: var(--surface-2, rgba(255,255,255,0.06));
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 2px 10px;
-  margin-bottom: 0.4rem;
+  color: var(--glow-cyan);
+  background: rgba(var(--accent1-rgb), 0.08);
+  border: 1px solid rgba(var(--accent1-rgb), 0.25);
+  border-left: 3px solid var(--glow-cyan);
+  border-radius: 4px;
+  padding: 3px 10px 3px 8px;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
 }
 
+/* ── Body: partial reveal with fade ── */
 .project-card-body {
-  padding: 0 2rem;
-  max-height: 0;
+  position: relative;
+  padding: 0.6rem 2rem 0;
+  max-height: 106px;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
+  transition: max-height 0.45s ease;
+}
+.project-card-body::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: linear-gradient(to bottom, transparent, var(--bg-card-solid));
+  pointer-events: none;
+  transition: opacity 0.35s ease;
 }
 .project-card.expanded .project-card-body {
-  max-height: 800px;
-  padding: 0 2rem 1.5rem;
+  max-height: 900px;
+}
+.project-card.expanded .project-card-body::after {
+  opacity: 0;
 }
 .project-card-body ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 .project-card-body li {
   position: relative;
   padding-left: 1.3rem;
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-secondary);
   line-height: 1.6;
 }
@@ -1175,36 +1192,52 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
 }
 
-.project-card-toggle {
+/* ── Toggle button: sits between body and footer, pushed to bottom ── */
+.project-card-toggle-wrap {
   display: flex;
+  justify-content: center;
+  padding: 0.5rem 2rem 0;
+  margin-top: auto;
+}
+.project-card-toggle {
+  display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   background: none;
   border: none;
-  color: var(--glow-cyan);
-  font-size: 0.8rem;
-  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 500;
   cursor: pointer;
-  padding: 0;
+  padding: 0.2rem 0.6rem;
   transition: color 0.2s ease;
   font-family: var(--font-mono, 'Fira Code', monospace);
+  letter-spacing: 0.02em;
+  opacity: 0.7;
 }
 .project-card-toggle:hover {
-  color: var(--glow-purple);
+  color: var(--glow-cyan);
+  opacity: 1;
 }
 .project-card-toggle svg {
   transition: transform 0.35s ease;
+  opacity: 0.6;
+}
+.project-card-toggle:hover svg {
+  opacity: 1;
 }
 .project-card.expanded .project-card-toggle svg {
   transform: rotate(180deg);
 }
 
-.project-card-actions {
+/* ── Footer: tags + GitHub icon ── */
+.project-card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1rem;
-  padding-top: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem 1.4rem;
   border-top: 1px solid var(--border);
 }
 
