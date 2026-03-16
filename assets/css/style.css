@@ -1150,9 +1150,10 @@ img { max-width: 100%; display: block; }
 .project-card-body {
   position: relative;
   padding: 0.6rem 2rem 0;
-  max-height: 106px;
   overflow: hidden;
-  transition: max-height 0.45s ease;
+  flex: 1 1 0;                /* fill all available space between header and toggle */
+  min-height: 60px;           /* at least show something */
+  transition: max-height 0.45s ease, flex 0.45s ease;
 }
 .project-card-body::after {
   content: '';
@@ -1166,6 +1167,7 @@ img { max-width: 100%; display: block; }
   transition: opacity 0.35s ease;
 }
 .project-card.expanded .project-card-body {
+  flex: 0 0 auto;            /* stop flexing, show full natural height */
   max-height: 900px;
 }
 .project-card.expanded .project-card-body::after {
@@ -1197,7 +1199,6 @@ img { max-width: 100%; display: block; }
   display: flex;
   justify-content: center;
   padding: 0.5rem 2rem 0;
-  margin-top: auto;
 }
 .project-card-toggle {
   display: inline-flex;
