@@ -122,6 +122,7 @@ const translations = {
     'skills.cat6': '🚀 Deployment & Version Control Tools',
     'skills.cat7': '📊 Data & Libraries',
     'skills.cat8': '👁️ Computer Vision',
+    'skills.cat9': '🤖 Robotics & Simulation',
 
     /* Education */
     'edu.title':    'Education',
@@ -274,6 +275,7 @@ const translations = {
     'skills.cat6': '🚀 Deployment & Versionskontrolle',
     'skills.cat7': '📊 Daten & Bibliotheken',
     'skills.cat8': '👁️ Computer Vision',
+    'skills.cat9': '🤖 Robotik & Simulation',
 
     /* Education */
     'edu.title':    'Ausbildung',
