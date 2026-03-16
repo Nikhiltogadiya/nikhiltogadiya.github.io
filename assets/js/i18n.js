@@ -104,6 +104,12 @@ const translations = {
     'proj5.p3': 'Realized autonomous grid navigation using BFS and an A*-based Sokoban puzzle solver with path planning and obstacle avoidance.',
     'proj5.p4': 'Integrated odometry, camera data, and velocity control in a modular ROS 2 architecture.',
 
+    'proj6.title':    'Autonomous Driving – Project Collection',
+    'proj6.subtitle': 'Reinforcement learning, sensor fusion, and adaptive vehicle control across three autonomous driving tasks',
+    'proj6.p1': '<strong>PPO Highway Driving:</strong> Trained a Proximal Policy Optimization RL agent in highway-env (Gymnasium) to drive autonomously — avoiding collisions, maintaining lane discipline, and reaching target speed using actor-critic networks.',
+    'proj6.p2': '<strong>Sensor Fusion (Dempster-Shafer):</strong> Built an earth-fixed LiDAR occupancy grid using Dempster-Shafer evidence theory, classifying each cell as occupied, free, or unknown while robustly handling sensor uncertainty in ROS 2 / Webots.',
+    'proj6.p3': '<strong>Adaptive Cruise Control (IDM):</strong> Implemented a longitudinal ACC system using the Intelligent Driver Model with radar data, enabling safe following distance and automatic speed adaptation without manual input.',
+
     /* Skills */
     'skills.title':    'Technical',
     'skills.title.hl': 'Skills',
@@ -249,6 +255,12 @@ const translations = {
     'proj5.p2': 'Implementierung eines Computer-Vision-Moduls mit OpenCV für Spurerkennung und Echtzeit-Bildverarbeitung zur Spurzentrierung.',
     'proj5.p3': 'Realisierung autonomer Gridnavigation mittels BFS-Algorithmus sowie einer A*-basierten Sokoban-Puzzlelösung mit Pfadplanung und Hindernisumgehung.',
     'proj5.p4': 'Integration von Odometrie-Daten, Kameradaten und Geschwindigkeitssteuerung in einer modularen ROS 2-Architektur.',
+
+    'proj6.title':    'Autonomes Fahren – Projektsammlung',
+    'proj6.subtitle': 'Reinforcement Learning, Sensorfusion und adaptive Fahrzeugsteuerung in drei autonomen Fahraufgaben',
+    'proj6.p1': '<strong>PPO Autobahnfahren:</strong> Training eines Proximal Policy Optimization RL-Agenten in highway-env (Gymnasium) für autonomes Fahren — Kollisionsvermeidung, Spurhaltung und Zielgeschwindigkeit mittels Actor-Critic-Netzwerken.',
+    'proj6.p2': '<strong>Sensorfusion (Dempster-Shafer):</strong> Aufbau eines erdfesten LiDAR-Belegungsgitters mit Dempster-Shafer-Evidenztheorie zur Klassifikation jeder Zelle als belegt, frei oder unbekannt — mit robuster Behandlung von Sensorunsicherheit in ROS 2 / Webots.',
+    'proj6.p3': '<strong>Adaptiver Tempomat (IDM):</strong> Implementierung eines Längsregelungs-ACC-Systems mit dem Intelligent Driver Model und Radardaten für sichere Abstandsregelung und automatische Geschwindigkeitsanpassung.',
 
     /* Skills */
     'skills.title':    'Technische',
