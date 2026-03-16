@@ -170,7 +170,7 @@ const translations = {
 
     /* Hero */
     'hero.greeting':     'Hallo, ich bin',
-    'hero.description':  'Ich entwickle autonome Multi-Agenten-Systeme, eingeschränkte LLM-Fine-Tuning und produktionsreife KI-Pipelines — von Forschungslaboren bis hin zur realen Robotik und Fertigungsumgebung.',
+    'hero.description':  'Ich entwickle autonome Multi-Agenten-Systeme, eingeschränktes LLM-Fine-Tuning und produktionsreife KI-Pipelines — von Forschungslaboren bis hin zur realen Robotik und Fertigungsumgebung.',
     'hero.btn.work':     'Meine Arbeit',
     'hero.btn.about':    'Über mich',
     'hero.stat.projects':  'KI/ML-Projekte',
@@ -189,7 +189,7 @@ const translations = {
     'about.title.me': 'mich',
     'about.subtitle': 'Modernste KI-Forschung in echten Mehrwert verwandeln',
     'about.p1': 'Ich bin ein <strong>KI/ML-Ingenieur</strong> und absolviere derzeit meinen M.Sc. in Digital Technology an der <strong>Ostfalia Hochschule</strong> in Deutschland, mit Schwerpunkt auf <strong>Agentic AI</strong> und <strong>Generative-KI</strong>-Systemen.',
-    'about.p2': 'Meine Arbeit umfasst den Aufbau <strong>autonomer Multi-Agenten-Museumsführer</strong> auf Temi-Robotern mit RAG-basiertem Retrieval, die Entwicklung <strong>eingeschränkter LLM-Fine-Tuning</strong> zur automatisierten Testgenerierung bei <strong>Volkswagen AG</strong> sowie die Erstellung von End-to-End-KI-Pipelines, die natürliche Sprache in fertigungsreife 3D-CAD-Modelle umwandeln.',
+    'about.p2': 'Meine Arbeit umfasst den Aufbau <strong>autonomer Multi-Agenten-Museumsführer</strong> auf Temi-Robotern mit RAG-basiertem Retrieval, die Entwicklung von <strong>eingeschränktem LLM-Fine-Tuning</strong> zur automatisierten Testgenerierung bei <strong>Volkswagen AG</strong> sowie die Erstellung von End-to-End-KI-Pipelines, die natürliche Sprache in fertigungsreife 3D-CAD-Modelle umwandeln.',
     'about.p3': 'Ich arbeite an der Schnittstelle von <strong>Forschung und Produktion</strong> — von der wissenschaftlichen Idee bis zur Deployment-Reife. Ob LLM-Fine-Tuning mit LoRA, Orchestrierung von Multi-Agenten-Workflows oder der Einsatz von ML-Diensten in Docker-Containern — ich liebe es, Systeme zu bauen, die in der realen Welt funktionieren.',
     'about.card1.title': 'Multi-Agenten-KI',
     'about.card1.desc':  'Autonome Systeme mit Tool-Use-Orchestrierung',
@@ -257,7 +257,7 @@ const translations = {
     'proj4.p3': 'Containerisierung und Deployment der ML-Anwendung mit Docker auf einem lokalen Server, um skalierbare Prognosedienste zu ermöglichen und datengetriebene Energiemanagement-Entscheidungen zu unterstützen.',
 
     'proj5.title':    'ROS2 TurtleBot3 – Kamerabasierte Navigation & Sokoban-Puzzlelösung',
-    'proj5.subtitle': 'Autonome Roboternavigation mit Computer Vision, BFS-Gitterfahrt und A*-basierter Sokoban-Puzzlelösung in ROS 2',
+    'proj5.subtitle': 'Autonome Roboternavigation mit Computer Vision, BFS-Gitterdurchquerung und A*-basierter Sokoban-Puzzlelösung in ROS 2',
     'proj5.p1': 'Entwicklung eines kamerabasierten Navigations- und Steuerungssystems für einen TurtleBot3-Roboter in ROS 2 Humble mit Sensorfusion und Echtzeit-Geschwindigkeitssteuerung.',
     'proj5.p2': 'Implementierung eines Computer-Vision-Moduls mit OpenCV für Spurerkennung und Echtzeit-Bildverarbeitung zur Spurzentrierung.',
     'proj5.p3': 'Realisierung autonomer Gridnavigation mittels BFS-Algorithmus sowie einer A*-basierten Sokoban-Puzzlelösung mit Pfadplanung und Hindernisumgehung.',
@@ -294,7 +294,7 @@ const translations = {
     /* Contact */
     'contact.title':    'Kontakt',
     'contact.title.hl': 'aufnehmen',
-    'contact.subtitle': 'Fragen oder Interesse an einer Zusammenarbeit? Melden Sie sich!',
+    'contact.subtitle': 'Fragen oder Interesse an einer Zusammenarbeit? Melde dich!',
     'contact.heading':  "Lass uns reden",
     'contact.desc':     'Ich freue mich immer über Gespräche zu neuen Projekten, Möglichkeiten oder einfach über KI/ML.',
     'contact.email.label':    'E-Mail',
