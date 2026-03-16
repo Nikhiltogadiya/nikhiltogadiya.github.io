@@ -14,7 +14,7 @@ const translations = {
 
     /* Hero */
     'hero.greeting':     "Hello, I'm",
-    'hero.description':  'I build multi-agent AI systems, fine-tune LLMs with grammar constraints, and ship production-ready ML pipelines — bridging the gap between research and real-world robotics.',
+    'hero.description':  'I build multi-agent AI systems, fine-tune LLMs with grammar constraints, and ship production-ready ML pipelines to bridge the gap between research and real-world robotics.',
     'hero.btn.work':     'View My Work',
     'hero.btn.about':    'About Me',
     'hero.stat.projects':  'AI/ML Projects',
@@ -34,7 +34,7 @@ const translations = {
     'about.subtitle': 'From research papers to working systems',
     'about.p1': "I'm an <strong>AI/ML Engineer</strong> currently pursuing my M.Sc. in Digital Technology at <strong>Ostfalia Hochschule</strong> in Germany, specializing in <strong>Agentic AI</strong> and <strong>Generative AI</strong> systems.",
     'about.p2': 'So far I\'ve built <strong>autonomous multi-agent museum guides</strong> running on Temi robots with RAG retrieval, worked on <strong>constrained LLM Fine-Tuning</strong> for automated test generation at <strong>Volkswagen AG</strong>, and created end-to-end AI pipeline that turns plain text into manufacturable 3D CAD models.',
-    'about.p3': "I enjoy taking ideas from <strong>research papers and making them work in production</strong>. Fine-tuning LLMs with LoRA, wiring up multi-agent workflows, containerizing ML services — I'm happiest when something I built is actually running in the real world.",
+    'about.p3': "I enjoy taking ideas from <strong>research papers and making them work in production</strong>. Whether it's fine-tuning LLMs with LoRA, wiring up multi-agent workflows, or containerizing ML services, I'm happiest when something I built is actually running in the real world.",
     'about.card1.title': 'Multi-Agent AI',
     'about.card1.desc':  'Autonomous systems with tool-use orchestration',
     'about.card2.title': 'Generative AI',
@@ -67,7 +67,7 @@ const translations = {
     'exp3.date':    '03/2024 – 07/2024',
     'exp3.location':'📍 Wolfsburg, Germany',
     'exp3.p1': 'Trained and compared RNN, LSTM, and GRU models in TensorFlow on multivariate smart meter data. Picked the best architecture based on MAE and RMSE.',
-    'exp3.p2': 'Built the full pipeline from scratch — data preprocessing, feature engineering, sequence modeling, validation, and a FastAPI endpoint for real-time predictions.',
+    'exp3.p2': 'Built the full pipeline from scratch, covering data preprocessing, feature engineering, sequence modeling, validation, and a FastAPI endpoint for real-time predictions.',
     'exp3.p3': 'Packaged everything in Docker and deployed on a local server. The API serves energy consumption forecasts that feed into management dashboards.',
 
     /* Projects */
@@ -76,13 +76,13 @@ const translations = {
     'proj.subtitle': 'Things I built because I was curious',
 
     'proj1.subtitle': 'Multi-Agent LLM System for 3D CAD Generation',
-    'proj1.p1': 'Built a pipeline that takes a text description and produces a manufacturable 3D CAD model. Four agents handle it — requirements, planning, code generation, and verification — with automatic error-correction loops when something fails.',
+    'proj1.p1': 'Built a pipeline that takes a text description and produces a manufacturable 3D CAD model. Four agents handle it (requirements, planning, code generation, and verification) with automatic error-correction loops when something fails.',
     'proj1.p2': 'Added a design memory layer (ChromaDB + RAG) so the system learns from past successes and reuses working patterns instead of starting from scratch every time.',
     'proj1.p3': 'Runs CadQuery in a sandbox, verifies outputs with a Vision-Language Model, and exports STL/STEP files. Available as both a Flask web UI and CLI.',
 
     'proj2.title':    'ML-Based Ticket Sales & Revenue Forecasting',
     'proj2.subtitle': 'AI-Powered Attendance & Revenue Prediction for Ice Hockey',
-    'proj2.p1': 'Built an ML pipeline that predicts game-day attendance and revenue for a professional ice hockey team. Trained on 3 seasons of real sales data — hit R² = 0.76 with ~90% accuracy.',
+    'proj2.p1': 'Built an ML pipeline that predicts game-day attendance and revenue for a professional ice hockey team. Trained on 3 seasons of real sales data and hit R² = 0.76 with ~90% accuracy.',
     'proj2.p2': 'Created a custom ETL pipeline and 19 features (weather, holidays, opponent strength, team form) pulled from multiple data sources and formats.',
     'proj2.p3': 'Served the model through a FastAPI REST API with a React dashboard where users can run scenario-based forecasts and explore the data.',
 
@@ -97,21 +97,21 @@ const translations = {
     'proj4.subtitle': 'Deep learning pipeline for smart meter energy consumption prediction with real-time FastAPI inference',
     'proj4.date':     '03/2024 – 07/2024',
     'proj4.p1': 'Trained and compared RNN, LSTM, and GRU models in TensorFlow on multivariate smart meter data. Picked the best architecture based on MAE and RMSE.',
-    'proj4.p2': 'Built the full pipeline from scratch — data preprocessing, feature engineering, sequence modeling, validation, and a FastAPI endpoint for real-time predictions.',
+    'proj4.p2': 'Built the full pipeline from scratch, covering data preprocessing, feature engineering, sequence modeling, validation, and a FastAPI endpoint for real-time predictions.',
     'proj4.p3': 'Packaged everything in Docker and deployed on a local server. The API serves energy consumption forecasts that feed into management dashboards.',
 
     'proj5.title':    'ROS2 TurtleBot3 – Camera-Based Navigation & Sokoban Puzzle Solving',
     'proj5.subtitle': 'Camera-driven robot that navigates grids, detects lanes, and solves Sokoban puzzles in ROS 2',
-    'proj5.p1': 'Built a camera-based navigation system for a TurtleBot3 robot in ROS 2 Humble — fuses sensor data and controls velocity in real time.',
+    'proj5.p1': 'Built a camera-based navigation system for a TurtleBot3 robot in ROS 2 Humble that fuses sensor data and controls velocity in real time.',
     'proj5.p2': 'Implemented a computer vision module for lane detection and real-time image processing so the robot stays centered in its lane.',
     'proj5.p3': 'Added autonomous grid navigation with BFS and an A*-based Sokoban puzzle solver that handles path planning and obstacle avoidance.',
     'proj5.p4': 'Tied together odometry, camera feeds, and velocity commands in a clean modular ROS 2 architecture.',
 
     'proj6.title':    'Autonomous Driving – Project Collection',
     'proj6.subtitle': 'Three mini-projects: Deep RL highway driving, LiDAR sensor fusion, and adaptive cruise control',
-    'proj6.p1': '<strong>PPO Highway Driving:</strong> Trained a PPO agent in highway-env (Gymnasium) that learns to drive on its own — dodge collisions, stay in lane, and hit the target speed using actor-critic networks.',
+    'proj6.p1': '<strong>PPO Highway Driving:</strong> Trained a PPO agent in highway-env (Gymnasium) that learns to drive on its own. It dodges collisions, stays in lane, and hits the target speed using actor-critic networks.',
     'proj6.p2': '<strong>Sensor Fusion (Dempster-Shafer):</strong> Built a LiDAR occupancy grid using Dempster-Shafer theory to label each cell as occupied, free, or unknown. Handles noisy sensor data gracefully in ROS 2 / Webots.',
-    'proj6.p3': '<strong>Adaptive Cruise Control (IDM):</strong> Built a longitudinal ACC system with the Intelligent Driver Model and radar data — keeps a safe following distance and adjusts speed automatically.',
+    'proj6.p3': '<strong>Adaptive Cruise Control (IDM):</strong> Built a longitudinal ACC system with the Intelligent Driver Model and radar data. It keeps a safe following distance and adjusts speed automatically.',
 
     /* Skills */
     'skills.title':    'Technical',
@@ -170,7 +170,7 @@ const translations = {
 
     /* Hero */
     'hero.greeting':     'Hallo, ich bin',
-    'hero.description':  'Ich baue Multi-Agenten-KI-Systeme, fine-tune LLMs mit Grammatik-Constraints und bringe ML-Pipelines in Produktion — die Brücke zwischen Forschung und realer Robotik.',
+    'hero.description':  'Ich baue Multi-Agenten-KI-Systeme, fine-tune LLMs mit Grammatik-Constraints und bringe ML-Pipelines in Produktion, um die Brücke zwischen Forschung und realer Robotik zu schlagen.',
     'hero.btn.work':     'Meine Arbeit',
     'hero.btn.about':    'Über mich',
     'hero.stat.projects':  'KI/ML-Projekte',
@@ -190,7 +190,7 @@ const translations = {
     'about.subtitle': 'Vom Paper zum laufenden System',
     'about.p1': 'Ich bin ein <strong>KI/ML-Ingenieur</strong> und absolviere derzeit meinen M.Sc. in Digital Technology an der <strong>Ostfalia Hochschule</strong> in Deutschland, mit Schwerpunkt auf <strong>Agentic AI</strong> und <strong>Generative-KI</strong>-Systemen.',
     'about.p2': 'Bisher habe ich <strong>autonome Multi-Agenten-Museumsführer</strong> auf Temi-Robotern mit RAG-Retrieval gebaut, an <strong>eingeschränktem LLM-Fine-Tuning</strong> zur automatisierten Testgenerierung bei <strong>Volkswagen AG</strong> gearbeitet und eine End-to-End-KI-Pipeline entwickelt, die Klartext in fertigungsreife 3D-CAD-Modelle verwandelt.',
-    'about.p3': 'Ich nehme gerne Ideen aus <strong>Papers und bringe sie in Produktion</strong>. LLMs mit LoRA fine-tunen, Multi-Agenten-Workflows aufbauen, ML-Dienste in Docker packen — am liebsten ist mir, wenn etwas, das ich gebaut habe, tatsächlich in der echten Welt läuft.',
+    'about.p3': 'Ich nehme gerne Ideen aus <strong>Papers und bringe sie in Produktion</strong>. Ob LLMs mit LoRA fine-tunen, Multi-Agenten-Workflows aufbauen oder ML-Dienste in Docker packen: Am liebsten ist mir, wenn etwas, das ich gebaut habe, tatsächlich in der echten Welt läuft.',
     'about.card1.title': 'Multi-Agenten-KI',
     'about.card1.desc':  'Autonome Systeme mit Tool-Use-Orchestrierung',
     'about.card2.title': 'Generative KI',
@@ -209,13 +209,13 @@ const translations = {
     'exp1.date':    '09/2024 – Heute',
     'exp1.location':'📍 Wolfenbüttel, Deutschland',
     'exp1.p1': 'Multi-Agenten-KI-Museumsführer auf 2 Temi-Robotern gebaut, mit RAG-Retrieval (HuggingFace-Embeddings + Vektordatenbank). Über 90 % Antwortabdeckung bei Antwortzeiten unter 1 Sekunde dank Confidence-Gated Prompting für mehrsprachige Besucher.',
-    'exp1.p2': '<strong>pytemi</strong> geschrieben — eine Python-Bibliothek, die die Temi-REST-API für Navigation, Sensoren und Robotersteuerung kapselt. Wurde zum Fundament des gesamten Projekts.',
+    'exp1.p2': '<strong>pytemi</strong> geschrieben, eine Python-Bibliothek, die die Temi-REST-API für Navigation, Sensoren und Robotersteuerung kapselt. Wurde zum Fundament des gesamten Projekts.',
     'exp1.p3': 'Das Team bei RAG-Tuning und Multi-Roboter-Übergabeprotokollen betreut. Koordiniere die Integration Richtung Produktionseinsatz.',
 
     'exp2.role':    'Bildungsprojekt — Eingeschränkte LLM-Testgenerierung',
     'exp2.date':    '03/2025 – 07/2025',
     'exp2.location':'📍 Wolfsburg, Deutschland',
-    'exp2.p1': 'Zweistufiges Framework gebaut, das LLM-Ausgaben an eine formale Grammatik bindet (.lark DSL) — per DFA-basierter Token-Maskierung (Syncode). Ergebnis: generierte Testfälle, die jedes Mal syntaktisch korrekt sind.',
+    'exp2.p1': 'Zweistufiges Framework gebaut, das LLM-Ausgaben per DFA-basierter Token-Maskierung (Syncode) an eine formale Grammatik (.lark DSL) bindet. Ergebnis: generierte Testfälle, die jedes Mal syntaktisch korrekt sind.',
     'exp2.p2': 'LLaMA 3B und 8B mit LoRA fine-getuned, damit das Modell die Zuordnung von Anforderungsbeschreibungen zu Testschritten wirklich versteht. Beide Größen verglichen, um den Sweet Spot zwischen Qualität und Kosten zu finden.',
     'exp2.p3': 'Ausgabequalität mit BLEU, SacreBLEU und ROUGE-L gegen menschlich geschriebene Referenztests gemessen. Sowohl strukturelle Korrektheit als auch Bedeutungstreue geprüft.',
 
@@ -223,7 +223,7 @@ const translations = {
     'exp3.date':    '03/2024 – 07/2024',
     'exp3.location':'📍 Wolfsburg, Deutschland',
     'exp3.p1': 'RNN-, LSTM- und GRU-Modelle in TensorFlow auf multivariaten Smart-Meter-Daten trainiert und verglichen. Beste Architektur anhand von MAE und RMSE ausgewählt.',
-    'exp3.p2': 'Die komplette Pipeline von Grund auf gebaut — Datenvorverarbeitung, Feature Engineering, Sequenzmodellierung, Validierung und ein FastAPI-Endpoint für Echtzeit-Prognosen.',
+    'exp3.p2': 'Die komplette Pipeline von Grund auf gebaut, also Datenvorverarbeitung, Feature Engineering, Sequenzmodellierung, Validierung und ein FastAPI-Endpoint für Echtzeit-Prognosen.',
     'exp3.p3': 'Alles in Docker gepackt und auf einem lokalen Server deployed. Die API liefert Energieverbrauchsprognosen für Management-Dashboards.',
 
     /* Projects */
@@ -232,20 +232,20 @@ const translations = {
     'proj.subtitle': 'Projekte, die aus Neugier entstanden sind',
 
     'proj1.subtitle': 'Multi-Agenten-LLM-System zur 3D-CAD-Generierung',
-    'proj1.p1': 'Pipeline gebaut, die aus einer Textbeschreibung ein fertigungsreifes 3D-CAD-Modell erzeugt. Vier Agenten übernehmen das — Anforderungen, Planung, Code-Generierung und Verifikation — mit automatischen Fehlerkorrekturschleifen.',
+    'proj1.p1': 'Pipeline gebaut, die aus einer Textbeschreibung ein fertigungsreifes 3D-CAD-Modell erzeugt. Vier Agenten übernehmen das (Anforderungen, Planung, Code-Generierung und Verifikation) mit automatischen Fehlerkorrekturschleifen.',
     'proj1.p2': 'Design-Memory-Schicht ergänzt (ChromaDB + RAG), damit das System aus vergangenen Erfolgen lernt und funktionierende Muster wiederverwendet, statt jedes Mal von vorn anzufangen.',
     'proj1.p3': 'Führt CadQuery in einer Sandbox aus, prüft Ergebnisse mit einem Vision-Language-Model und exportiert STL/STEP-Dateien. Verfügbar als Flask-Web-UI und CLI.',
 
     'proj2.title':    'ML-basierte Ticketverkaufs- und Umsatzprognose',
     'proj2.subtitle': 'KI-gestützte Besuchs- und Umsatzprognose im Eishockey',
-    'proj2.p1': 'ML-Pipeline gebaut, die Spieltag-Besucherzahlen und Umsatz eines Profi-Eishockeyteams vorhersagt. Trainiert auf 3 Saisonen echter Verkaufsdaten — R² = 0,76 bei ~90 % Genauigkeit.',
+    'proj2.p1': 'ML-Pipeline gebaut, die Spieltag-Besucherzahlen und Umsatz eines Profi-Eishockeyteams vorhersagt. Trainiert auf 3 Saisonen echter Verkaufsdaten, mit R² = 0,76 bei ~90 % Genauigkeit.',
     'proj2.p2': 'Eigene ETL-Pipeline erstellt mit 19 Features (Wetter, Feiertage, Gegnerstärke, Teamform), zusammengezogen aus verschiedenen Datenquellen und Formaten.',
     'proj2.p3': 'Modell über eine FastAPI-REST-API bereitgestellt, mit einem React-Dashboard, in dem Nutzer Szenario-Prognosen fahren und die Daten erkunden können.',
 
     'proj3.title':    'Eingeschränkte LLM-Testgenerierung',
     'proj3.subtitle': 'LLMs dazu bringen, syntaktisch korrekte Testfälle mit formalen Grammatik-Constraints zu generieren',
     'proj3.date':     '03/2025 – 07/2025',
-    'proj3.p1': 'Zweistufiges Framework gebaut, das LLM-Ausgaben an eine formale Grammatik bindet (.lark DSL) — per DFA-basierter Token-Maskierung (Syncode). Ergebnis: generierte Testfälle, die jedes Mal syntaktisch korrekt sind.',
+    'proj3.p1': 'Zweistufiges Framework gebaut, das LLM-Ausgaben per DFA-basierter Token-Maskierung (Syncode) an eine formale Grammatik (.lark DSL) bindet. Ergebnis: generierte Testfälle, die jedes Mal syntaktisch korrekt sind.',
     'proj3.p2': 'LLaMA 3B und 8B mit LoRA fine-getuned, damit das Modell die Zuordnung von Anforderungsbeschreibungen zu Testschritten wirklich versteht. Beide Größen verglichen, um den Sweet Spot zwischen Qualität und Kosten zu finden.',
     'proj3.p3': 'Ausgabequalität mit BLEU, SacreBLEU und ROUGE-L gegen menschlich geschriebene Referenztests gemessen. Sowohl strukturelle Korrektheit als auch Bedeutungstreue geprüft.',
 
@@ -253,21 +253,21 @@ const translations = {
     'proj4.subtitle': 'Deep-Learning-Pipeline zur Energieverbrauchsprognose von Smart Metern mit FastAPI-Echtzeit-Inferenz',
     'proj4.date':     '03/2024 – 07/2024',
     'proj4.p1': 'RNN-, LSTM- und GRU-Modelle in TensorFlow auf multivariaten Smart-Meter-Daten trainiert und verglichen. Beste Architektur anhand von MAE und RMSE ausgewählt.',
-    'proj4.p2': 'Die komplette Pipeline von Grund auf gebaut — Datenvorverarbeitung, Feature Engineering, Sequenzmodellierung, Validierung und ein FastAPI-Endpoint für Echtzeit-Prognosen.',
+    'proj4.p2': 'Die komplette Pipeline von Grund auf gebaut, also Datenvorverarbeitung, Feature Engineering, Sequenzmodellierung, Validierung und ein FastAPI-Endpoint für Echtzeit-Prognosen.',
     'proj4.p3': 'Alles in Docker gepackt und auf einem lokalen Server deployed. Die API liefert Energieverbrauchsprognosen für Management-Dashboards.',
 
     'proj5.title':    'ROS2 TurtleBot3 – Kamerabasierte Navigation & Sokoban-Puzzlelösung',
     'proj5.subtitle': 'Kameragesteuerter Roboter, der Grids navigiert, Spuren erkennt und Sokoban-Puzzles in ROS 2 löst',
-    'proj5.p1': 'Kamerabasiertes Navigationssystem für einen TurtleBot3-Roboter in ROS 2 Humble gebaut — fusioniert Sensordaten und steuert die Geschwindigkeit in Echtzeit.',
+    'proj5.p1': 'Kamerabasiertes Navigationssystem für einen TurtleBot3-Roboter in ROS 2 Humble gebaut, das Sensordaten fusioniert und die Geschwindigkeit in Echtzeit steuert.',
     'proj5.p2': 'Computer-Vision-Modul für Spurerkennung und Echtzeit-Bildverarbeitung implementiert, damit der Roboter in der Spur bleibt.',
     'proj5.p3': 'Autonome Grid-Navigation mit BFS ergänzt sowie einen A*-basierten Sokoban-Puzzlelöser mit Pfadplanung und Hindernisumgehung.',
     'proj5.p4': 'Odometrie, Kamera-Feeds und Geschwindigkeitsbefehle in einer sauberen modularen ROS 2-Architektur zusammengeführt.',
 
     'proj6.title':    'Autonomes Fahren – Projektsammlung',
     'proj6.subtitle': 'Drei Mini-Projekte: Deep-RL-Autobahnfahren, LiDAR-Sensorfusion und adaptiver Tempomat',
-    'proj6.p1': '<strong>PPO Autobahnfahren:</strong> PPO-Agenten in highway-env (Gymnasium) trainiert, der selbstständig fährt — Kollisionen ausweichen, Spur halten und Zielgeschwindigkeit erreichen mit Actor-Critic-Netzwerken.',
+    'proj6.p1': '<strong>PPO Autobahnfahren:</strong> PPO-Agenten in highway-env (Gymnasium) trainiert, der selbstständig fährt. Er weicht Kollisionen aus, hält die Spur und erreicht die Zielgeschwindigkeit mit Actor-Critic-Netzwerken.',
     'proj6.p2': '<strong>Sensorfusion (Dempster-Shafer):</strong> LiDAR-Belegungsgitter mit Dempster-Shafer-Theorie gebaut, das jede Zelle als belegt, frei oder unbekannt einstuft. Kommt mit verrauschten Sensordaten in ROS 2 / Webots gut klar.',
-    'proj6.p3': '<strong>Adaptiver Tempomat (IDM):</strong> Längsregelungs-ACC mit dem Intelligent Driver Model und Radardaten gebaut — hält sicheren Abstand und passt die Geschwindigkeit automatisch an.',
+    'proj6.p3': '<strong>Adaptiver Tempomat (IDM):</strong> Längsregelungs-ACC mit dem Intelligent Driver Model und Radardaten gebaut. Hält sicheren Abstand und passt die Geschwindigkeit automatisch an.',
 
     /* Skills */
     'skills.title':    'Technische',
