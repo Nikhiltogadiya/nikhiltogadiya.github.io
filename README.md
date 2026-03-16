@@ -9,7 +9,7 @@
 
 <!-- Subtitle -->
 <p>
-  <em>Building autonomous multi-agent systems, constrained LLM frameworks, and production-ready AI pipelines.</em>
+  <em>Building autonomous multi-agent systems, constrained LLM Fine-Tuning, and production-ready AI pipelines.</em>
 </p>
 
 <!-- Social Badges -->
@@ -38,7 +38,7 @@
 
 - 🎓 M.Sc. Digital Technology @ **Ostfalia Hochschule**, Germany
 - 🤖 Built autonomous **multi-agent museum guides** on Temi robots with RAG-based retrieval
-- 🚗 Engineered constrained LLM frameworks for **automated test generation** at **Volkswagen AG**
+- 🚗 Engineered constrained LLM Fine-Tuning for **automated test generation** at **Volkswagen AG**
 - 🏭 Created **Text2CAD** — a multi-agent system converting natural language → manufacturable 3D CAD models
 - ⚡ Passionate about turning AI research into real-world robotics & manufacturing workflows
 

@@ -14,7 +14,7 @@ const translations = {
 
     /* Hero */
     'hero.greeting':     "Hello, I'm",
-    'hero.description':  'I build autonomous multi-agent systems, constrained LLM frameworks, and production-ready AI pipelines — from research labs to real-world robotics and manufacturing floors.',
+    'hero.description':  'I build autonomous multi-agent systems, constrained LLM Fine-Tuning, and production-ready AI pipelines — from research labs to real-world robotics and manufacturing floors.',
     'hero.btn.work':     'View My Work',
     'hero.btn.about':    'About Me',
     'hero.stat.projects':  'AI/ML Projects',
@@ -33,7 +33,7 @@ const translations = {
     'about.title.me': 'Me',
     'about.subtitle': 'Turning cutting-edge AI research into real-world impact',
     'about.p1': "I'm an <strong>AI/ML Engineer</strong> currently pursuing my M.Sc. in Digital Technology at <strong>Ostfalia Hochschule</strong> in Germany, specializing in <strong>Agentic AI</strong> and <strong>Generative AI</strong> systems.",
-    'about.p2': 'My work spans building <strong>autonomous multi-agent museum guides</strong> on Temi robots with RAG-based retrieval, engineering <strong>constrained LLM frameworks</strong> for automated test generation at <strong>Volkswagen AG</strong>, and creating end-to-end AI pipelines that convert natural language into manufacturable 3D CAD models.',
+    'about.p2': 'My work spans building <strong>autonomous multi-agent museum guides</strong> on Temi robots with RAG-based retrieval, engineering <strong>constrained LLM Fine-Tuning</strong> for automated test generation at <strong>Volkswagen AG</strong>, and creating end-to-end AI pipelines that convert natural language into manufacturable 3D CAD models.',
     'about.p3': "I thrive at the intersection of <strong>research and production</strong> — taking complex AI concepts from paper to deployment. Whether it's fine-tuning LLMs with LoRA, orchestrating multi-agent workflows, or deploying ML services in Docker containers, I love building systems that work in the real world.",
     'about.card1.title': 'Multi-Agent AI',
     'about.card1.desc':  'Autonomous systems with tool-use orchestration',
@@ -84,6 +84,18 @@ const translations = {
     'proj2.p1': 'Engineered an end-to-end ML pipeline to forecast game-day attendance and revenue for a professional ice hockey team using 3 seasons of real sales data, achieving R² = 0.76 with ~90% prediction accuracy.',
     'proj2.p2': 'Designed a custom ETL pipeline and 19 domain-specific features (weather, holidays, opponent strength, team form) from multi-format sources.',
     'proj2.p3': 'Deployed the trained model via a FastAPI REST API with an interactive React dashboard for scenario-based revenue forecasting and data exploration.',
+
+    'proj3.subtitle': 'Formal grammar-constrained LLM Fine-Tuning for automated system test generation in autonomous driving validation',
+    'proj3.date':     '03/2025 – 07/2025',
+    'proj3.p1': 'Proposed and implemented a two-stage constrained text generation framework combining formal grammar enforcement (.lark DSL) with DFA-based token masking (Syncode) to guarantee syntactic correctness of generated system test cases.',
+    'proj3.p2': 'Applied parameter-efficient fine-tuning (LoRA) on LLaMA 3B and 8B models to improve semantic alignment between requirement descriptions and generated test steps, analyzing performance trade-offs across model sizes.',
+    'proj3.p3': 'Evaluated generation quality using BLEU, SacreBLEU, and ROUGE-L against reference test cases, systematically benchmarking structural validity and semantic accuracy for autonomous driving validation tasks.',
+
+    'proj4.subtitle': 'Deep learning pipeline for smart meter energy consumption prediction with real-time FastAPI inference',
+    'proj4.date':     '03/2024 – 07/2024',
+    'proj4.p1': 'Developed and optimized deep learning models (RNN, LSTM, GRU) in TensorFlow for multivariate time-series forecasting of smart meter energy data; evaluated performance using MAE and RMSE and selected the best-performing architecture.',
+    'proj4.p2': 'Designed and implemented an end-to-end ML pipeline, including data preprocessing, feature engineering, sequence modeling, model validation, and RESTful API deployment with FastAPI for real-time inference.',
+    'proj4.p3': 'Containerized and deployed the ML application using Docker on a local server, enabling scalable prediction services and supporting data-driven energy management decisions.',
 
     /* Skills */
     'skills.title':    'Technical',
@@ -141,7 +153,7 @@ const translations = {
 
     /* Hero */
     'hero.greeting':     'Hallo, ich bin',
-    'hero.description':  'Ich entwickle autonome Multi-Agenten-Systeme, eingeschränkte LLM-Frameworks und produktionsreife KI-Pipelines — von Forschungslaboren bis hin zur realen Robotik und Fertigungsumgebung.',
+    'hero.description':  'Ich entwickle autonome Multi-Agenten-Systeme, eingeschränkte LLM-Fine-Tuning und produktionsreife KI-Pipelines — von Forschungslaboren bis hin zur realen Robotik und Fertigungsumgebung.',
     'hero.btn.work':     'Meine Arbeit',
     'hero.btn.about':    'Über mich',
     'hero.stat.projects':  'KI/ML-Projekte',
@@ -160,7 +172,7 @@ const translations = {
     'about.title.me': 'mich',
     'about.subtitle': 'Modernste KI-Forschung in echten Mehrwert verwandeln',
     'about.p1': 'Ich bin ein <strong>KI/ML-Ingenieur</strong> und absolviere derzeit meinen M.Sc. in Digital Technology an der <strong>Ostfalia Hochschule</strong> in Deutschland, mit Schwerpunkt auf <strong>Agentic AI</strong> und <strong>Generative-KI</strong>-Systemen.',
-    'about.p2': 'Meine Arbeit umfasst den Aufbau <strong>autonomer Multi-Agenten-Museumsführer</strong> auf Temi-Robotern mit RAG-basiertem Retrieval, die Entwicklung <strong>eingeschränkter LLM-Frameworks</strong> zur automatisierten Testgenerierung bei <strong>Volkswagen AG</strong> sowie die Erstellung von End-to-End-KI-Pipelines, die natürliche Sprache in fertigungsreife 3D-CAD-Modelle umwandeln.',
+    'about.p2': 'Meine Arbeit umfasst den Aufbau <strong>autonomer Multi-Agenten-Museumsführer</strong> auf Temi-Robotern mit RAG-basiertem Retrieval, die Entwicklung <strong>eingeschränkter LLM-Fine-Tuning</strong> zur automatisierten Testgenerierung bei <strong>Volkswagen AG</strong> sowie die Erstellung von End-to-End-KI-Pipelines, die natürliche Sprache in fertigungsreife 3D-CAD-Modelle umwandeln.',
     'about.p3': 'Ich arbeite an der Schnittstelle von <strong>Forschung und Produktion</strong> — von der wissenschaftlichen Idee bis zur Deployment-Reife. Ob LLM-Fine-Tuning mit LoRA, Orchestrierung von Multi-Agenten-Workflows oder der Einsatz von ML-Diensten in Docker-Containern — ich liebe es, Systeme zu bauen, die in der realen Welt funktionieren.',
     'about.card1.title': 'Multi-Agenten-KI',
     'about.card1.desc':  'Autonome Systeme mit Tool-Use-Orchestrierung',
@@ -211,6 +223,18 @@ const translations = {
     'proj2.p1': 'Entwicklung einer End-to-End-ML-Pipeline zur Prognose der Spieltagsbesuche und Einnahmen eines professionellen Eishockeyteams auf Basis von 3 Saisonen echter Verkaufsdaten, mit R² = 0,76 und einer Vorhersagegenauigkeit von ~90 %.',
     'proj2.p2': 'Entwicklung einer maßgeschneiderten ETL-Pipeline und 19 domänenspezifischer Features (Wetter, Feiertage, Gegnerstärke, Teamform) aus verschiedenen Quellformaten.',
     'proj2.p3': 'Deployment des trainierten Modells über eine FastAPI-REST-API mit einem interaktiven React-Dashboard für szenariobasierte Umsatzprognosen und Datenanalyse.',
+
+    'proj3.subtitle': 'Formal-grammatikbasiertes LLM-Fine-Tuning zur automatisierten Systemtestgenerierung für die Validierung autonomer Fahrzeuge',
+    'proj3.date':     '03/2025 – 07/2025',
+    'proj3.p1': 'Konzeption und Implementierung eines zweistufigen Frameworks zur eingeschränkten Textgenerierung, das formale Grammatikdurchsetzung (.lark DSL) mit DFA-basierter Token-Maskierung (Syncode) kombiniert, um die syntaktische Korrektheit generierter Systemtestfälle zu gewährleisten.',
+    'proj3.p2': 'Anwendung von parametereffizientem Fine-Tuning (LoRA) auf LLaMA-3B- und 8B-Modellen zur Verbesserung der semantischen Ausrichtung zwischen Anforderungsbeschreibungen und generierten Testschritten sowie Analyse von Performance-Kompromissen zwischen Modellgrößen.',
+    'proj3.p3': 'Bewertung der Generierungsqualität mit BLEU, SacreBLEU und ROUGE-L anhand von Referenztestfällen, systematisches Benchmarking struktureller Validität und semantischer Genauigkeit für Validierungsaufgaben im autonomen Fahren.',
+
+    'proj4.subtitle': 'Deep-Learning-Pipeline zur Energieverbrauchsprognose von Smart Metern mit FastAPI-Echtzeit-Inferenz',
+    'proj4.date':     '03/2024 – 07/2024',
+    'proj4.p1': 'Entwicklung und Optimierung von Deep-Learning-Modellen (RNN, LSTM, GRU) in TensorFlow für die multivariate Zeitreihenprognose von Smart-Meter-Energiedaten; Leistungsbewertung mit MAE und RMSE und Auswahl der besten Architektur.',
+    'proj4.p2': 'Konzeption und Implementierung einer End-to-End-ML-Pipeline einschließlich Datenvorverarbeitung, Feature Engineering, Sequenzmodellierung, Modellvalidierung und RESTful-API-Deployment mit FastAPI für Echtzeit-Inferenz.',
+    'proj4.p3': 'Containerisierung und Deployment der ML-Anwendung mit Docker auf einem lokalen Server, um skalierbare Prognosedienste zu ermöglichen und datengetriebene Energiemanagement-Entscheidungen zu unterstützen.',
 
     /* Skills */
     'skills.title':    'Technische',
