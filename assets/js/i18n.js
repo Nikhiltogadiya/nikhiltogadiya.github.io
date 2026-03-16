@@ -80,17 +80,20 @@ const translations = {
     'proj1.p2': 'Implemented self-learning design memory using ChromaDB with RAG-based retrieval, enabling reuse of successful design patterns and iterative improvement.',
     'proj1.p3': 'Integrated sandboxed CadQuery execution, Vision-Language Model verification, and STL/STEP export via Flask web UI and CLI.',
 
+    'proj2.title':    'ML-Based Ticket Sales & Revenue Forecasting',
     'proj2.subtitle': 'AI-Powered Attendance & Revenue Prediction for Ice Hockey',
     'proj2.p1': 'Engineered an end-to-end ML pipeline to forecast game-day attendance and revenue for a professional ice hockey team using 3 seasons of real sales data, achieving R² = 0.76 with ~90% prediction accuracy.',
     'proj2.p2': 'Designed a custom ETL pipeline and 19 domain-specific features (weather, holidays, opponent strength, team form) from multi-format sources.',
     'proj2.p3': 'Deployed the trained model via a FastAPI REST API with an interactive React dashboard for scenario-based revenue forecasting and data exploration.',
 
+    'proj3.title':    'Constrained LLM Test Generation',
     'proj3.subtitle': 'Formal grammar-constrained LLM Fine-Tuning for automated system test generation in autonomous driving validation',
     'proj3.date':     '03/2025 – 07/2025',
     'proj3.p1': 'Proposed and implemented a two-stage constrained text generation framework combining formal grammar enforcement (.lark DSL) with DFA-based token masking (Syncode) to guarantee syntactic correctness of generated system test cases.',
     'proj3.p2': 'Applied parameter-efficient fine-tuning (LoRA) on LLaMA 3B and 8B models to improve semantic alignment between requirement descriptions and generated test steps, analyzing performance trade-offs across model sizes.',
     'proj3.p3': 'Evaluated generation quality using BLEU, SacreBLEU, and ROUGE-L against reference test cases, systematically benchmarking structural validity and semantic accuracy for autonomous driving validation tasks.',
 
+    'proj4.title':    'Energy Time Series Forecasting',
     'proj4.subtitle': 'Deep learning pipeline for smart meter energy consumption prediction with real-time FastAPI inference',
     'proj4.date':     '03/2024 – 07/2024',
     'proj4.p1': 'Developed and optimized deep learning models (RNN, LSTM, GRU) in TensorFlow for multivariate time-series forecasting of smart meter energy data; evaluated performance using MAE and RMSE and selected the best-performing architecture.',
@@ -233,17 +236,20 @@ const translations = {
     'proj1.p2': 'Implementierung eines selbstlernenden Design-Speichers mit ChromaDB und RAG-basiertem Retrieval zur Wiederverwendung erfolgreicher Designmuster und iterativer Verbesserung.',
     'proj1.p3': 'Integration von Sandbox-CadQuery-Ausführung, Vision-Language-Modell-Verifikation sowie STL/STEP-Export über Flask-Web-UI und CLI.',
 
+    'proj2.title':    'ML-basierte Ticketverkaufs- und Umsatzprognose',
     'proj2.subtitle': 'KI-gestützte Besuchs- und Umsatzprognose im Eishockey',
     'proj2.p1': 'Entwicklung einer End-to-End-ML-Pipeline zur Prognose der Spieltagsbesuche und Einnahmen eines professionellen Eishockeyteams auf Basis von 3 Saisonen echter Verkaufsdaten, mit R² = 0,76 und einer Vorhersagegenauigkeit von ~90 %.',
     'proj2.p2': 'Entwicklung einer maßgeschneiderten ETL-Pipeline und 19 domänenspezifischer Features (Wetter, Feiertage, Gegnerstärke, Teamform) aus verschiedenen Quellformaten.',
     'proj2.p3': 'Deployment des trainierten Modells über eine FastAPI-REST-API mit einem interaktiven React-Dashboard für szenariobasierte Umsatzprognosen und Datenanalyse.',
 
+    'proj3.title':    'Eingeschränkte LLM-Testgenerierung',
     'proj3.subtitle': 'Formal-grammatikbasiertes LLM-Fine-Tuning zur automatisierten Systemtestgenerierung für die Validierung autonomer Fahrzeuge',
     'proj3.date':     '03/2025 – 07/2025',
     'proj3.p1': 'Konzeption und Implementierung eines zweistufigen Frameworks zur eingeschränkten Textgenerierung, das formale Grammatikdurchsetzung (.lark DSL) mit DFA-basierter Token-Maskierung (Syncode) kombiniert, um die syntaktische Korrektheit generierter Systemtestfälle zu gewährleisten.',
     'proj3.p2': 'Anwendung von parametereffizientem Fine-Tuning (LoRA) auf LLaMA-3B- und 8B-Modellen zur Verbesserung der semantischen Ausrichtung zwischen Anforderungsbeschreibungen und generierten Testschritten sowie Analyse von Performance-Kompromissen zwischen Modellgrößen.',
     'proj3.p3': 'Bewertung der Generierungsqualität mit BLEU, SacreBLEU und ROUGE-L anhand von Referenztestfällen, systematisches Benchmarking struktureller Validität und semantischer Genauigkeit für Validierungsaufgaben im autonomen Fahren.',
 
+    'proj4.title':    'Energie-Zeitreihenprognose',
     'proj4.subtitle': 'Deep-Learning-Pipeline zur Energieverbrauchsprognose von Smart Metern mit FastAPI-Echtzeit-Inferenz',
     'proj4.date':     '03/2024 – 07/2024',
     'proj4.p1': 'Entwicklung und Optimierung von Deep-Learning-Modellen (RNN, LSTM, GRU) in TensorFlow für die multivariate Zeitreihenprognose von Smart-Meter-Energiedaten; Leistungsbewertung mit MAE und RMSE und Auswahl der besten Architektur.',
