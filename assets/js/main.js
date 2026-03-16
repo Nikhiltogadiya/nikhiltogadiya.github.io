@@ -6,16 +6,29 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* -------------------- Typing Effect -------------------- */
-  const typingEl = document.getElementById('typing-text');
-  if (typingEl) {
-    const phrases = [
-      'AI/ML Engineer',
-      'Agentic AI Developer',
-      'Generative AI Specialist',
-      'LLM & RAG Architect',
-      'Robotics AI Engineer',
+  /* ==================== LANGUAGE / i18n ==================== */
+  const langToggleBtn = document.getElementById('lang-toggle');
+  let currentLang = localStorage.getItem('lang') || 'en';
+  // typing state — defined here so setLanguage can restart it
+  let typingTimeout = null;
+
+  function getTypingPhrases(lang) {
+    return [
+      translations[lang]['typing.0'],
+      translations[lang]['typing.1'],
+      translations[lang]['typing.2'],
+      translations[lang]['typing.3'],
+      translations[lang]['typing.4'],
     ];
+  }
+
+  function startTyping(lang) {
+    const typingEl = document.getElementById('typing-text');
+    if (!typingEl) return;
+    if (typingTimeout) clearTimeout(typingTimeout);
+    typingEl.textContent = '';
+
+    const phrases = getTypingPhrases(lang);
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -31,24 +44,64 @@ document.addEventListener('DOMContentLoaded', () => {
         charIndex++;
         if (charIndex === current.length) {
           isDeleting = true;
-          setTimeout(type, pauseAfterType);
+          typingTimeout = setTimeout(type, pauseAfterType);
           return;
         }
-        setTimeout(type, typeSpeed);
+        typingTimeout = setTimeout(type, typeSpeed);
       } else {
         typingEl.textContent = current.substring(0, charIndex - 1);
         charIndex--;
         if (charIndex === 0) {
           isDeleting = false;
           phraseIndex = (phraseIndex + 1) % phrases.length;
-          setTimeout(type, pauseAfterDelete);
+          typingTimeout = setTimeout(type, pauseAfterDelete);
           return;
         }
-        setTimeout(type, deleteSpeed);
+        typingTimeout = setTimeout(type, deleteSpeed);
       }
     }
     type();
   }
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    document.documentElement.setAttribute('data-lang', lang);
+
+    // Swap textContent for all [data-i18n] elements
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang] && translations[lang][key] !== undefined) {
+        el.textContent = translations[lang][key];
+      }
+    });
+
+    // Swap innerHTML for elements that contain HTML (bold tags etc.)
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (translations[lang] && translations[lang][key] !== undefined) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+
+    // Update toggle button label
+    if (langToggleBtn) {
+      langToggleBtn.textContent = lang === 'de' ? '🇩🇪 DE' : '🇬🇧 EN';
+    }
+
+    // Restart typing animation with new language phrases
+    startTyping(lang);
+  }
+
+  // Init toggle button click
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener('click', () => {
+      setLanguage(currentLang === 'en' ? 'de' : 'en');
+    });
+  }
+
+  // Apply stored/default language on load
+  setLanguage(currentLang);
 
   /* -------------------- Navbar Scroll -------------------- */
   const navbar = document.querySelector('.navbar');

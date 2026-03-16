@@ -1816,6 +1816,34 @@ img { max-width: 100%; display: block; }
 [data-theme="dark"] .theme-toggle .icon-moon { opacity: 0; transform: rotate(90deg) scale(0.5); }
 
 /* ================================================================
+   LANGUAGE TOGGLE BUTTON
+   ================================================================ */
+.lang-toggle {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 20px;
+  padding: 0 12px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-family: var(--font-mono, 'Fira Code', monospace);
+  transition: all var(--transition);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.lang-toggle:hover {
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-1px);
+}
+
+/* ================================================================
    LIGHT-MODE SPECIFIC OVERRIDES
    ================================================================ */
 
