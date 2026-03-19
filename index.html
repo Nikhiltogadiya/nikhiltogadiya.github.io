@@ -237,9 +237,11 @@
             </div>
             <div class="timeline-location" data-i18n="exp1.location">📍 Wolfenbüttel, Germany</div>
             <ul class="timeline-points">
-              <li data-i18n="exp1.p1">Architected multi-agent AI museum tour guide on 2 Temi robots with RAG-based retrieval (HuggingFace embeddings + vector DB), achieving 90%+ answer coverage with sub-1s response times via confidence-gated prompting for multilingual visitor interaction.</li>
-              <li data-i18n-html="exp1.p2">Developed <strong>pytemi</strong>, a custom Python library for Temi robot control (REST API abstraction, navigation, sensors) serving as core project infrastructure.</li>
-              <li data-i18n="exp1.p3">Mentored team on RAG optimization and multi-robot handover protocols, coordinating integration toward production deployment.</li>
+              <li data-i18n="exp1.p1">Built a multi-agent AI museum guide on 2 Temi robots using RAG retrieval (HuggingFace embeddings + vector DB).</li>
+              <li data-i18n="exp1.p2">Achieved 90%+ answer coverage with sub-1s response times via confidence-gated multilingual prompting.</li>
+              <li data-i18n-html="exp1.p3">Wrote <strong>pytemi</strong>, a Python library wrapping the Temi REST API for navigation, sensors, and robot control.</li>
+              <li data-i18n="exp1.p4">Mentored the team on RAG tuning and multi-robot handover protocols.</li>
+              <li data-i18n="exp1.p5">Coordinating integration toward production deployment.</li>
             </ul>
             <div class="timeline-tags">
               <span class="tag">Multi-Agent AI</span>
@@ -312,9 +314,11 @@
           </div>
           <div class="project-card-body">
             <ul>
-              <li data-i18n="proj1.p1">Built a pipeline that takes a text description and produces a manufacturable 3D CAD model. A multi-agent system handles it (requirements, planning, code generation, and verification) with automatic error-correction loops when something fails.</li>
-              <li data-i18n="proj1.p2">Implemented self-learning design memory using ChromaDB with RAG-based retrieval, enabling reuse of successful design patterns and iterative improvement.</li>
-              <li data-i18n="proj1.p3">Integrated sandboxed CadQuery execution, Vision-Language Model verification, and STL/STEP export via Flask web UI and CLI.</li>
+              <li data-i18n="proj1.p1">Built a text-to-3D-CAD pipeline using a multi-agent system (requirements, planning, code generation, verification).</li>
+              <li data-i18n="proj1.p2">Implemented automatic error-correction loops to recover from generation failures.</li>
+              <li data-i18n="proj1.p3">Added a design memory layer (ChromaDB + RAG) to reuse successful patterns across runs.</li>
+              <li data-i18n="proj1.p4">Runs CadQuery in a sandbox and verifies outputs with a Vision-Language Model.</li>
+              <li data-i18n="proj1.p5">Exports STL/STEP files via both a Flask web UI and CLI.</li>
             </ul>
           </div>
           <div class="project-card-footer">
@@ -344,9 +348,10 @@
           </div>
           <div class="project-card-body">
             <ul>
-              <li data-i18n="proj2.p1">Engineered an end-to-end ML pipeline to forecast game-day attendance and revenue for a professional ice hockey team using 3 seasons of real sales data, achieving R² = 0.76 with ~90% prediction accuracy.</li>
-              <li data-i18n="proj2.p2">Designed a custom ETL pipeline and 19 domain-specific features (weather, holidays, opponent strength, team form) from multi-format sources.</li>
-              <li data-i18n="proj2.p3">Deployed the trained model via a FastAPI REST API with an interactive React dashboard for scenario-based revenue forecasting and data exploration.</li>
+              <li data-i18n="proj2.p1">Built an ML pipeline predicting game-day attendance and revenue for a professional ice hockey team.</li>
+              <li data-i18n="proj2.p2">Trained on 3 seasons of real sales data, achieving R² = 0.76 with ~90% accuracy.</li>
+              <li data-i18n="proj2.p3">Engineered 19 features (weather, holidays, opponent strength, team form) from multiple data sources.</li>
+              <li data-i18n="proj2.p4">Served predictions via a FastAPI REST API with a React dashboard for scenario-based forecasting.</li>
             </ul>
           </div>
           <div class="project-card-footer">
@@ -377,9 +382,11 @@
           </div>
           <div class="project-card-body">
             <ul>
-              <li data-i18n="proj3.p1">Proposed and implemented a two-stage constrained text generation framework combining formal grammar enforcement (.lark DSL) with DFA-based token masking (Syncode) to guarantee syntactic correctness of generated system test cases.</li>
-              <li data-i18n="proj3.p2">Applied parameter-efficient fine-tuning (LoRA) on LLaMA 3B and 8B models to improve semantic alignment between requirement descriptions and generated test steps, analyzing performance trade-offs across model sizes.</li>
-              <li data-i18n="proj3.p3">Evaluated generation quality using BLEU, SacreBLEU, and ROUGE-L against reference test cases, systematically benchmarking structural validity and semantic accuracy for autonomous driving validation tasks.</li>
+              <li data-i18n="proj3.p1">Built a two-stage framework forcing LLM outputs to follow a formal grammar (.lark DSL) via DFA-based token masking (Syncode).</li>
+              <li data-i18n="proj3.p2">Guaranteed syntactic correctness of every generated test case through constrained decoding.</li>
+              <li data-i18n="proj3.p3">Fine-tuned LLaMA 3B and 8B with LoRA to map requirement descriptions to test steps.</li>
+              <li data-i18n="proj3.p4">Compared both model sizes to find the sweet spot between output quality and cost.</li>
+              <li data-i18n="proj3.p5">Evaluated with BLEU, SacreBLEU, and ROUGE-L against human-written reference tests.</li>
             </ul>
           </div>
           <div class="project-card-footer">
@@ -405,10 +412,12 @@
           </div>
           <div class="project-card-body">
             <ul>
-              <li data-i18n="proj5.p1">Developed a camera-based navigation and control system for a TurtleBot3 robot in ROS 2 Humble, integrating sensor fusion and real-time velocity control.</li>
-              <li data-i18n="proj5.p2">Implemented a computer vision module using OpenCV for lane detection and real-time image processing for lane centering.</li>
-              <li data-i18n="proj5.p3">Realized autonomous grid navigation using BFS and an A*-based Sokoban puzzle solver with path planning and obstacle avoidance.</li>
-              <li data-i18n="proj5.p4">Integrated odometry, camera data, and velocity control in a modular ROS 2 architecture.</li>
+              <li data-i18n="proj5.p1">Built a camera-based navigation system for TurtleBot3 in ROS 2 Humble.</li>
+              <li data-i18n="proj5.p2">Fused sensor data for real-time velocity control.</li>
+              <li data-i18n="proj5.p3">Implemented lane detection and image processing via computer vision for lane centering.</li>
+              <li data-i18n="proj5.p4">Added autonomous grid navigation using BFS pathfinding.</li>
+              <li data-i18n="proj5.p5">Built an A*-based Sokoban puzzle solver with obstacle avoidance.</li>
+              <li data-i18n="proj5.p6">Integrated odometry, camera feeds, and velocity commands in a modular ROS 2 architecture.</li>
             </ul>
           </div>
           <div class="project-card-footer">
@@ -439,9 +448,12 @@
           </div>
           <div class="project-card-body">
             <ul>
-              <li data-i18n-html="proj6.p1"><strong>Deep RL Highway Driving:</strong> Trained an agent using deep reinforcement learning (PPO) in highway-env (Gymnasium) that learns to drive on its own. It dodges collisions, stays in lane, and hits the target speed using actor-critic networks.</li>
-              <li data-i18n-html="proj6.p2"><strong>Sensor Fusion (Dempster-Shafer):</strong> Built an earth-fixed LiDAR occupancy grid using Dempster-Shafer evidence theory, classifying each cell as occupied, free, or unknown while robustly handling sensor uncertainty in ROS 2 / Webots.</li>
-              <li data-i18n-html="proj6.p3"><strong>Adaptive Cruise Control (IDM):</strong> Implemented a longitudinal ACC system using the Intelligent Driver Model with radar data, enabling safe following distance and automatic speed adaptation without manual input.</li>
+              <li data-i18n-html="proj6.p1"><strong>Deep RL Highway Driving:</strong> Trained a PPO agent in highway-env (Gymnasium) for autonomous highway driving.</li>
+              <li data-i18n="proj6.p2">Agent avoids collisions, maintains lane, and reaches target speed using actor-critic networks.</li>
+              <li data-i18n-html="proj6.p3"><strong>Sensor Fusion (Dempster-Shafer):</strong> Built a LiDAR occupancy grid classifying each cell as occupied, free, or unknown.</li>
+              <li data-i18n="proj6.p4">Handles noisy sensor data robustly in ROS 2 / Webots.</li>
+              <li data-i18n-html="proj6.p5"><strong>Adaptive Cruise Control (IDM):</strong> Built a longitudinal ACC using the Intelligent Driver Model with radar data.</li>
+              <li data-i18n="proj6.p6">Maintains safe following distance and adjusts speed automatically.</li>
             </ul>
           </div>
           <div class="project-card-footer">
@@ -473,9 +485,11 @@
           </div>
           <div class="project-card-body">
             <ul>
-              <li data-i18n="proj4.p1">Developed and optimized deep learning models (RNN, LSTM, GRU) in TensorFlow for multivariate time-series forecasting of smart meter energy data; evaluated performance using MAE and RMSE and selected the best-performing architecture.</li>
-              <li data-i18n="proj4.p2">Designed and implemented an end-to-end ML pipeline, including data preprocessing, feature engineering, sequence modeling, model validation, and RESTful API deployment with FastAPI for real-time inference.</li>
-              <li data-i18n="proj4.p3">Containerized and deployed the ML application using Docker on a local server, enabling scalable prediction services and supporting data-driven energy management decisions.</li>
+              <li data-i18n="proj4.p1">Trained and compared RNN, LSTM, and GRU models in TensorFlow on multivariate smart meter data.</li>
+              <li data-i18n="proj4.p2">Selected the best architecture based on MAE and RMSE benchmarks.</li>
+              <li data-i18n="proj4.p3">Built the full pipeline: data preprocessing, feature engineering, sequence modeling, and validation.</li>
+              <li data-i18n="proj4.p4">Deployed a FastAPI endpoint for real-time energy consumption predictions.</li>
+              <li data-i18n="proj4.p5">Containerized with Docker and integrated forecasts into management dashboards.</li>
             </ul>
           </div>
           <div class="project-card-footer">
