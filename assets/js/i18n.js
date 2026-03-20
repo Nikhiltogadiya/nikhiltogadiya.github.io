@@ -14,7 +14,7 @@ const translations = {
 
     /* Hero */
     'hero.greeting':     "Hello, I'm",
-    'hero.description':  'I build multi-agent AI systems, fine-tune LLMs with grammar constraints, and ship ML pipelines — focused on getting research ideas running in real-world robotics.',
+    'hero.description':  'I build multi-agent AI systems, fine-tune LLMs with grammar constraints, and ship ML pipelines. My focus is on getting research ideas running in real-world robotics.',
     'hero.btn.work':     'View My Work',
     'hero.btn.about':    'About Me',
     'hero.stat.projects':  'AI/ML Projects',
@@ -62,7 +62,7 @@ const translations = {
     'exp2.date':    '03/2025 – 07/2025',
     'exp2.location':'📍 Wolfsburg, Germany',
     'exp2.p1': 'Built a two-stage framework forcing LLM outputs to follow a formal grammar (.lark DSL) via DFA-based token masking (Syncode).',
-    'exp2.p2': 'The result: every generated test case is syntactically valid — enforced by the constrained decoder.',
+    'exp2.p2': 'The result: every generated test case is syntactically valid, enforced by the constrained decoder.',
     'exp2.p3': 'Fine-tuned LLaMA 3B and 8B with LoRA to map requirement descriptions to test steps.',
     'exp2.p4': 'Compared both model sizes to find the sweet spot between output quality and cost.',
     'exp2.p5': 'Evaluated with BLEU, SacreBLEU, and ROUGE-L against human-written reference tests.',
@@ -99,7 +99,7 @@ const translations = {
     'proj3.subtitle': 'Making LLMs generate syntactically valid test cases using formal grammar constraints',
     'proj3.date':     '03/2025 – 07/2025',
     'proj3.p1': 'Built a two-stage framework forcing LLM outputs to follow a formal grammar (.lark DSL) via DFA-based token masking (Syncode).',
-    'proj3.p2': 'The result: every generated test case is syntactically valid — enforced by the constrained decoder.',
+    'proj3.p2': 'The result: every generated test case is syntactically valid, enforced by the constrained decoder.',
     'proj3.p3': 'Fine-tuned LLaMA 3B and 8B with LoRA to map requirement descriptions to test steps.',
     'proj3.p4': 'Compared both model sizes to find the sweet spot between output quality and cost.',
     'proj3.p5': 'Evaluated with BLEU, SacreBLEU, and ROUGE-L against human-written reference tests.',
@@ -188,7 +188,7 @@ const translations = {
 
     /* Hero */
     'hero.greeting':     'Hallo, ich bin',
-    'hero.description':  'Ich baue Multi-Agenten-KI-Systeme, fine-tune LLMs mit Grammatik-Constraints und bringe ML-Pipelines in Produktion — mit Fokus darauf, Forschungsideen in echte Robotik umzusetzen.',
+    'hero.description':  'Ich baue Multi-Agenten-KI-Systeme, fine-tune LLMs mit Grammatik-Constraints und bringe ML-Pipelines in Produktion. Mein Fokus liegt darauf, Forschungsideen in echte Robotik umzusetzen.',
     'hero.btn.work':     'Meine Arbeit',
     'hero.btn.about':    'Über mich',
     'hero.stat.projects':  'KI/ML-Projekte',
@@ -236,7 +236,7 @@ const translations = {
     'exp2.date':    '03/2025 – 07/2025',
     'exp2.location':'📍 Wolfsburg, Deutschland',
     'exp2.p1': 'Zweistufiges Framework gebaut, das LLM-Ausgaben per DFA-basierter Token-Maskierung (Syncode) an eine formale Grammatik (.lark DSL) bindet.',
-    'exp2.p2': 'Ergebnis: jeder generierte Testfall ist syntaktisch korrekt — sichergestellt durch den Constrained Decoder.',
+    'exp2.p2': 'Ergebnis: jeder generierte Testfall ist syntaktisch korrekt, sichergestellt durch den Constrained Decoder.',
     'exp2.p3': 'LLaMA 3B und 8B mit LoRA fine-getuned, um Anforderungsbeschreibungen auf Testschritte abzubilden.',
     'exp2.p4': 'Beide Modellgrößen verglichen, um den Sweet Spot zwischen Qualität und Kosten zu finden.',
     'exp2.p5': 'Mit BLEU, SacreBLEU und ROUGE-L gegen menschlich geschriebene Referenztests evaluiert.',
@@ -258,7 +258,7 @@ const translations = {
     'proj1.subtitle': 'Multi-Agenten-LLM-System zur 3D-CAD-Generierung',
     'proj1.p1': 'Text-zu-3D-CAD-Pipeline mit einem Multi-Agenten-System (Anforderungen, Planung, Code-Generierung, Verifikation) gebaut.',
     'proj1.p2': 'Automatische Korrekturschleifen eingebaut, damit das System bei Fehlern selbst nachbessert.',
-    'proj1.p3': 'Design-Memory (ChromaDB + RAG) ergänzt — das System lernt aus früheren Durchläufen, statt bei null anzufangen.',
+    'proj1.p3': 'Design-Memory (ChromaDB + RAG) ergänzt, sodass das System aus früheren Durchläufen lernt, statt bei null anzufangen.',
     'proj1.p4': 'Führt CadQuery in einer Sandbox aus und prüft Ergebnisse mit einem Vision-Language-Model.',
     'proj1.p5': 'Exportiert STL/STEP-Dateien über Flask-Web-UI und CLI.',
 
@@ -273,7 +273,7 @@ const translations = {
     'proj3.subtitle': 'LLMs dazu bringen, syntaktisch korrekte Testfälle mit formalen Grammatik-Constraints zu generieren',
     'proj3.date':     '03/2025 – 07/2025',
     'proj3.p1': 'Zweistufiges Framework gebaut, das LLM-Ausgaben per DFA-basierter Token-Maskierung (Syncode) an eine formale Grammatik (.lark DSL) bindet.',
-    'proj3.p2': 'Ergebnis: jeder generierte Testfall ist syntaktisch korrekt — sichergestellt durch den Constrained Decoder.',
+    'proj3.p2': 'Ergebnis: jeder generierte Testfall ist syntaktisch korrekt, sichergestellt durch den Constrained Decoder.',
     'proj3.p3': 'LLaMA 3B und 8B mit LoRA fine-getuned, um Anforderungsbeschreibungen auf Testschritte abzubilden.',
     'proj3.p4': 'Beide Modellgrößen verglichen, um den Sweet Spot zwischen Qualität und Kosten zu finden.',
     'proj3.p5': 'Mit BLEU, SacreBLEU und ROUGE-L gegen menschlich geschriebene Referenztests evaluiert.',
