@@ -1208,6 +1208,10 @@ img { max-width: 100%; display: block; }
 
 [data-theme="dark"] .footer {
   background: #07071a;
+  color: var(--text-primary);
+}
+[data-theme="dark"] .footer-social a {
+  color: var(--text-primary);
 }
 
 /* CTA box — replace bright cyan gradient with a muted dark card */
