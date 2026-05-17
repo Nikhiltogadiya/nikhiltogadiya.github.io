@@ -3,12 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nikhil Togadiya — AI/ML Engineer</title>
-  <meta name="description" content="Portfolio of Nikhil Togadiya — AI/ML Engineer specializing in Agentic AI, Generative AI, LLMs, RAG, and production-ready ML systems." />
+  <title>Nikhil Togadiya | AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Nikhil Togadiya, an AI/ML Engineer specializing in Agentic AI, Generative AI, LLMs, RAG, and production-ready ML systems." />
   <meta name="author" content="Nikhil Togadiya" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Prevent flash of wrong theme -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
+
+  <!-- Prevent flash of wrong language -->
+  <script>
+    (function() {
+      var l = localStorage.getItem('lang');
+      if (l === 'de') document.documentElement.setAttribute('data-lang', 'de');
+    })();
+  </script>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Nikhil Togadiya — AI/ML Engineer" />
+  <meta property="og:title" content="Nikhil Togadiya | AI/ML Engineer" />
   <meta property="og:description" content="AI/ML Engineer specializing in Agentic AI & Generative AI. Building autonomous multi-agent systems and production-ready AI pipelines." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nikhiltogadiya.github.io/Nikhiltogadiya/" />
@@ -18,14 +36,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet" />
 
-  <!-- Icons (Lucide via CDN) -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <!-- Icons (Lucide via CDN, pinned for stability) -->
+  <script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"></script>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Favicon (GitHub avatar) -->
-  <link rel="icon" href="https://github.com/Nikhiltogadiya.png" type="image/png" />
+  <!-- Favicon (set dynamically: local upload first, GitHub fallback) -->
+  <link rel="icon" href="https://github.com/Nikhiltogadiya.png" type="image/png" id="site-favicon" />
 </head>
 <body>
 
@@ -36,13 +54,13 @@
     <div class="container">
       <a href="#" class="nav-logo"><span>&lt;</span>NT<span>/&gt;</span></a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
+        <li><a href="#about" data-i18n="nav.about"></a></li>
+        <li><a href="#experience" data-i18n="nav.experience"></a></li>
+        <li><a href="#projects" data-i18n="nav.projects"></a></li>
+        <li><a href="#skills" data-i18n="nav.skills"></a></li>
+        <li><a href="#education" data-i18n="nav.education"></a></li>
         <!-- <li><a href="#blog">Blog</a></li> -->
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" data-i18n="nav.contact"></a></li>
         <!--
           ╔══════════════════════════════════════════════════════╗
           ║  RESUME DOWNLOAD LINK                                ║
@@ -52,9 +70,30 @@
         -->
         <!-- <li><a href="assets/resume/Nikhil_Togadiya_Resume.pdf" target="_blank" class="nav-resume-btn">📄 Resume</a></li> -->
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <!-- Sun icon (shown in dark mode) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <!-- Moon icon (shown in light mode) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">🇬🇧 EN</button>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -65,35 +104,32 @@
   <section class="hero" id="hero">
     <div class="container">
       <div class="hero-content">
-        <p class="hero-greeting"><span class="wave">👋</span> Hello, I'm</p>
+        <p class="hero-greeting"><span class="wave">👋</span> <span data-i18n="hero.greeting"></span></p>
         <h1 class="hero-name">Nikhil Togadiya</h1>
         <div class="hero-typing">
           <span id="typing-text"></span><span class="cursor"></span>
         </div>
-        <p class="hero-description">
-          I build autonomous multi-agent systems, constrained LLM frameworks, and production-ready 
-          AI pipelines — from research labs to real-world robotics and manufacturing floors.
-        </p>
+        <p class="hero-description" data-i18n="hero.description"></p>
         <div class="hero-buttons">
           <a href="#projects" class="btn btn-primary">
-            <i data-lucide="layers" style="width:18px;height:18px"></i> View My Work
+            <i data-lucide="layers" style="width:18px;height:18px"></i> <span data-i18n="hero.btn.work"></span>
           </a>
           <a href="#about" class="btn btn-outline">
-            <i data-lucide="user" style="width:18px;height:18px"></i> About Me
+            <i data-lucide="user" style="width:18px;height:18px"></i> <span data-i18n="hero.btn.about"></span>
           </a>
         </div>
         <div class="hero-stats">
           <div class="hero-stat">
             <h3>3+</h3>
-            <p>AI/ML Projects</p>
+            <p data-i18n="hero.stat.projects"></p>
           </div>
           <div class="hero-stat">
             <h3>2+</h3>
-            <p>Industry Partners</p>
+            <p data-i18n="hero.stat.partners"></p>
           </div>
           <div class="hero-stat">
             <h3>5+</h3>
-            <p>AI Technologies</p>
+            <p data-i18n="hero.stat.tech"></p>
           </div>
         </div>
       </div>
@@ -101,12 +137,12 @@
         <div class="hero-avatar-wrapper">
           <!--
             ╔══════════════════════════════════════════════════════╗
-            ║  PROFILE PHOTO                                      ║
-            ║  Replace the src below with your own photo URL.      ║
-            ║  Currently using your GitHub avatar.                 ║
+            ║  PROFILE PHOTO                                       ║
+            ║  Upload your photo as: assets/profile-photo.jpg      ║
+            ║  If missing, GitHub avatar is used automatically.    ║
             ╚══════════════════════════════════════════════════════╝
           -->
-          <img src="https://github.com/Nikhiltogadiya.png" alt="Nikhil Togadiya" />
+          <img id="profile-photo" src="https://github.com/Nikhiltogadiya.png" alt="Nikhil Togadiya" />
         </div>
       </div>
     </div>
@@ -118,50 +154,36 @@
        ============================================================ -->
   <section class="section section-alt" id="about">
     <div class="container">
-      <h2 class="section-title fade-in">About <span class="highlight">Me</span></h2>
-      <p class="section-subtitle fade-in">Turning cutting-edge AI research into real-world impact</p>
+      <h2 class="section-title fade-in"><span data-i18n="about.title"></span> <span class="highlight" data-i18n="about.title.me"></span></h2>
+      <p class="section-subtitle fade-in" data-i18n="about.subtitle"></p>
 
       <div class="about-grid">
         <div class="about-text fade-in-left">
-          <p>
-            I'm an <strong>AI/ML Engineer</strong> currently pursuing my M.Sc. in Digital Technology 
-            at <strong>Ostfalia Hochschule</strong> in Germany, specializing in <strong>Agentic AI</strong> 
-            and <strong>Generative AI</strong> systems.
-          </p>
-          <p>
-            My work spans building <strong>autonomous multi-agent museum guides</strong> on Temi robots 
-            with RAG-based retrieval, engineering <strong>constrained LLM frameworks</strong> for 
-            automated test generation at <strong>Volkswagen AG</strong>, and creating end-to-end 
-            AI pipelines that convert natural language into manufacturable 3D CAD models.
-          </p>
-          <p>
-            I thrive at the intersection of <strong>research and production</strong> — taking complex 
-            AI concepts from paper to deployment. Whether it's fine-tuning LLMs with LoRA, orchestrating 
-            multi-agent workflows, or deploying ML services in Docker containers, I love building 
-            systems that work in the real world.
-          </p>
+          <p data-i18n-html="about.p1"></p>
+          <p data-i18n-html="about.p2"></p>
+          <p data-i18n-html="about.p3"></p>
         </div>
 
         <div class="about-highlights fade-in-right">
           <div class="about-highlight-card">
             <div class="icon">🤖</div>
-            <h4>Multi-Agent AI</h4>
-            <p>Autonomous systems with tool-use orchestration</p>
+            <h4 data-i18n="about.card1.title"></h4>
+            <p data-i18n="about.card1.desc"></p>
           </div>
           <div class="about-highlight-card">
             <div class="icon">🧬</div>
-            <h4>Generative AI</h4>
-            <p>LLM fine-tuning, constrained decoding, RAG</p>
+            <h4 data-i18n="about.card2.title"></h4>
+            <p data-i18n="about.card2.desc"></p>
           </div>
           <div class="about-highlight-card">
             <div class="icon">🏭</div>
-            <h4>Production ML</h4>
-            <p>Docker, FastAPI, end-to-end pipelines</p>
+            <h4 data-i18n="about.card3.title"></h4>
+            <p data-i18n="about.card3.desc"></p>
           </div>
           <div class="about-highlight-card">
             <div class="icon">🤝</div>
-            <h4>Industry Partners</h4>
-            <p>Volkswagen, WOBCOM, Ostfalia</p>
+            <h4 data-i18n="about.card4.title"></h4>
+            <p data-i18n="about.card4.desc"></p>
           </div>
         </div>
       </div>
@@ -181,8 +203,8 @@
        ============================================================ -->
   <section class="section" id="experience">
     <div class="container">
-      <h2 class="section-title fade-in">Professional <span class="highlight">Experience</span></h2>
-      <p class="section-subtitle fade-in">Building AI systems for industry and research</p>
+      <h2 class="section-title fade-in"><span data-i18n="exp.title"></span> <span class="highlight" data-i18n="exp.title.hl"></span></h2>
+      <p class="section-subtitle fade-in" data-i18n="exp.subtitle"></p>
 
       <div class="timeline">
 
@@ -192,24 +214,26 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <div class="timeline-role">Werkstudent (AI/Robotics)</div>
+                <div class="timeline-role" data-i18n="exp1.role"></div>
                 <div class="timeline-company">Ostfalia Hochschule für angewandte Wissenschaften</div>
               </div>
-              <span class="timeline-date">09/2024 – Present</span>
+              <span class="timeline-date" data-i18n="exp1.date"></span>
             </div>
-            <div class="timeline-location">📍 Wolfenbüttel, Germany</div>
-            <ul class="timeline-points">
-              <li>Architected multi-agent AI museum tour guide on 2 Temi robots with RAG-based retrieval (HuggingFace embeddings + vector DB), achieving 90%+ answer coverage with sub-1s response times via confidence-gated prompting for multilingual visitor interaction.</li>
-              <li>Developed <strong>pytemi</strong>, a custom Python library for Temi robot control (REST API abstraction, navigation, sensors) serving as core project infrastructure.</li>
-              <li>Mentored team on RAG optimization and multi-robot handover protocols, coordinating integration toward production deployment.</li>
-            </ul>
+            <div class="timeline-location" data-i18n="exp1.location"></div>
+            <p class="timeline-desc" data-i18n="exp1.desc"></p>
+            <!-- <ul class="timeline-points">
+              <li data-i18n="exp1.p1"></li>
+              <li data-i18n="exp1.p2"></li>
+              <li data-i18n-html="exp1.p3"></li>
+              <li data-i18n="exp1.p4"></li>
+              <li data-i18n="exp1.p5"></li>
+            </ul> -->
             <div class="timeline-tags">
               <span class="tag">Multi-Agent AI</span>
               <span class="tag">RAG</span>
               <span class="tag">HuggingFace</span>
               <span class="tag">LangChain</span>
               <span class="tag">Temi Robots</span>
-              <span class="tag">Python</span>
             </div>
             <!--
               ╔══════════════════════════════════════╗
@@ -224,76 +248,6 @@
               </a>
               <a href="#" target="_blank" class="timeline-link">
                 <i data-lucide="external-link" style="width:16px;height:16px"></i> Demo
-              </a>
-            </div>
-            -->
-          </div>
-        </div>
-
-        <!-- ─── Experience Item 2: Volkswagen ─── -->
-        <div class="timeline-item fade-in-left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <div class="timeline-role">Educational Project — Constrained LLM Test Generation</div>
-                <div class="timeline-company">Volkswagen AG</div>
-              </div>
-              <span class="timeline-date">03/2025 – 07/2025</span>
-            </div>
-            <div class="timeline-location">📍 Wolfsburg, Germany</div>
-            <ul class="timeline-points">
-              <li>Proposed and implemented a two-stage constrained text generation framework combining formal grammar enforcement (.lark DSL) with DFA-based token masking (Syncode) to guarantee syntactic correctness of generated system test cases.</li>
-              <li>Applied parameter-efficient fine-tuning (LoRA) on LLaMA 3B and 8B models to improve semantic alignment between requirement descriptions and generated test steps, analyzing performance trade-offs across model sizes.</li>
-              <li>Evaluated generation quality using BLEU, SacreBLEU, and ROUGE-L against reference test cases, systematically benchmarking structural validity and semantic accuracy for autonomous driving validation tasks.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tag">LLaMA</span>
-              <span class="tag">LoRA/PEFT</span>
-              <span class="tag">Constrained Decoding</span>
-              <span class="tag">Syncode</span>
-              <span class="tag">Formal Grammars</span>
-              <span class="tag">NLP</span>
-            </div>
-            <!--
-            <div class="timeline-links">
-              <a href="#" target="_blank" class="timeline-link">
-                <i data-lucide="github" style="width:16px;height:16px"></i> GitHub
-              </a>
-            </div>
-            -->
-          </div>
-        </div>
-
-        <!-- ─── Experience Item 3: WOBCOM ─── -->
-        <div class="timeline-item fade-in-left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <div>
-                <div class="timeline-role">Educational Project — Energy Time Series Forecasting</div>
-                <div class="timeline-company">WOBCOM GmbH</div>
-              </div>
-              <span class="timeline-date">03/2024 – 07/2024</span>
-            </div>
-            <div class="timeline-location">📍 Wolfsburg, Germany</div>
-            <ul class="timeline-points">
-              <li>Developed and optimized deep learning models (RNN, LSTM, GRU) in TensorFlow for multivariate time-series forecasting of smart meter energy data; evaluated performance using MAE and RMSE and selected the best-performing architecture.</li>
-              <li>Designed and implemented an end-to-end ML pipeline, including data preprocessing, feature engineering, sequence modeling, model validation, and RESTful API deployment with FastAPI for real-time inference.</li>
-              <li>Containerized and deployed the ML application using Docker on a local server, enabling scalable prediction services and supporting data-driven energy management decisions.</li>
-            </ul>
-            <div class="timeline-tags">
-              <span class="tag">TensorFlow</span>
-              <span class="tag">LSTM</span>
-              <span class="tag">Time Series</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Python</span>
-            </div>
-            <!--
-            <div class="timeline-links">
-              <a href="#" target="_blank" class="timeline-link">
-                <i data-lucide="github" style="width:16px;height:16px"></i> GitHub
               </a>
             </div>
             -->
@@ -323,9 +277,11 @@
        4. Add GitHub / Demo links in the project-links area.
        ============================================================ -->
   <section class="section section-alt" id="projects">
+
+
     <div class="container">
-      <h2 class="section-title fade-in">Personal <span class="highlight">Projects</span></h2>
-      <p class="section-subtitle fade-in">Side projects exploring the frontiers of AI</p>
+      <h2 class="section-title fade-in"><span data-i18n="proj.title"></span> <span class="highlight" data-i18n="proj.title.hl"></span></h2>
+      <p class="section-subtitle fade-in" data-i18n="proj.subtitle"></p>
 
       <div class="projects-grid">
 
@@ -334,16 +290,18 @@
           <div class="project-card-header">
             <div class="project-card-icon">🏭</div>
             <h3 class="project-card-title">Text2CAD</h3>
-            <p class="project-card-subtitle">Multi-Agent LLM System for 3D CAD Generation</p>
+            <p class="project-card-subtitle" data-i18n="proj1.subtitle"></p>
             <p class="project-card-date">09/2025 – 01/2026</p>
           </div>
-          <div class="project-card-body">
+          <!-- <div class="project-card-body">
             <ul>
-              <li>Engineered an end-to-end AI pipeline converting natural language prompts into manufacturable 3D CAD models using a 4-agent architecture (requirements, planning, code generation, verification) with automated error-correction loops.</li>
-              <li>Implemented self-learning design memory using ChromaDB with RAG-based retrieval, enabling reuse of successful design patterns and iterative improvement.</li>
-              <li>Integrated sandboxed CadQuery execution, Vision-Language Model verification, and STL/STEP export via Flask web UI and CLI.</li>
+              <li data-i18n="proj1.p1"></li>
+              <li data-i18n="proj1.p2"></li>
+              <li data-i18n="proj1.p3"></li>
+              <li data-i18n="proj1.p4"></li>
+              <li data-i18n="proj1.p5"></li>
             </ul>
-          </div>
+          </div> -->
           <div class="project-card-footer">
             <div class="project-tags">
               <span class="tag">LangChain</span>
@@ -355,7 +313,7 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/Nikhiltogadiya/Text2CAD" target="_blank" class="project-link" title="GitHub">
-                <i data-lucide="github" style="width:20px;height:20px"></i>
+                <i data-lucide="github" style="width:18px;height:18px"></i>
               </a>
             </div>
           </div>
@@ -365,31 +323,161 @@
         <div class="project-card fade-in">
           <div class="project-card-header">
             <div class="project-card-icon">🏒</div>
-            <h3 class="project-card-title">ML-Based Ticket Sales & Revenue Forecasting</h3>
-            <p class="project-card-subtitle">AI-Powered Attendance & Revenue Prediction for Ice Hockey</p>
+            <h3 class="project-card-title" data-i18n="proj2.title"></h3>
+            <p class="project-card-subtitle" data-i18n="proj2.subtitle"></p>
             <p class="project-card-date">11/2025 – 11/2025</p>
           </div>
-          <div class="project-card-body">
+          <!-- <div class="project-card-body">
             <ul>
-              <li>Engineered an end-to-end ML pipeline to forecast game-day attendance and revenue for a professional ice hockey team using 3 seasons of real sales data, achieving R² = 0.76 with ~90% prediction accuracy.</li>
-              <li>Designed a custom ETL pipeline and 19 domain-specific features (weather, holidays, opponent strength, team form) from multi-format sources.</li>
-              <li>Deployed the trained model via a FastAPI REST API with an interactive React dashboard for scenario-based revenue forecasting and data exploration.</li>
+              <li data-i18n="proj2.p1"></li>
+              <li data-i18n="proj2.p2"></li>
+              <li data-i18n="proj2.p3"></li>
+              <li data-i18n="proj2.p4"></li>
             </ul>
-          </div>
+          </div> -->
           <div class="project-card-footer">
             <div class="project-tags">
               <span class="tag">XGBoost</span>
               <span class="tag">scikit-learn</span>
               <span class="tag">FastAPI</span>
-              <span class="tag">React</span>
               <span class="tag">Feature Engineering</span>
-              <span class="tag">Python</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/Nikhiltogadiya/grizzlys-ticketing-forecast" target="_blank" class="project-link" title="GitHub">
-                <i data-lucide="github" style="width:20px;height:20px"></i>
+                <i data-lucide="github" style="width:18px;height:18px"></i>
               </a>
             </div>
+          </div>
+        </div>
+
+        <!-- ─── Project 3: Constrained LLM Test Generation (Volkswagen) ─── -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <div class="project-card-icon">🚗</div>
+            <h3 class="project-card-title" data-i18n="proj3.title"></h3>
+            <p class="project-card-partner">🏢 Volkswagen AG</p>
+            <p class="project-card-subtitle" data-i18n="proj3.subtitle"></p>
+            <p class="project-card-date" data-i18n="proj3.date"></p>
+          </div>
+          <!-- <div class="project-card-body">
+            <ul>
+              <li data-i18n="proj3.p1"></li>
+              <li data-i18n="proj3.p2"></li>
+              <li data-i18n="proj3.p3"></li>
+              <li data-i18n="proj3.p4"></li>
+              <li data-i18n="proj3.p5"></li>
+            </ul>
+          </div> -->
+          <div class="project-card-footer">
+            <div class="project-tags">
+              <span class="tag">LLaMA</span>
+              <span class="tag">LoRA/PEFT</span>
+              <span class="tag">Constrained Decoding</span>
+              <span class="tag">Syncode</span>
+              <span class="tag">Formal Grammars</span>
+              <span class="tag">NLP</span>
+            </div>
+            <div class="project-links"></div>
+          </div>
+        </div>
+
+        <!-- ─── Project 4: ROS2 TurtleBot3 ─── -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <div class="project-card-icon">🤖</div>
+            <h3 class="project-card-title" data-i18n="proj5.title"></h3>
+            <p class="project-card-subtitle" data-i18n="proj5.subtitle"></p>
+            <p class="project-card-date">03/2025 – 07/2025</p>
+          </div>
+          <!-- <div class="project-card-body">
+            <ul>
+              <li data-i18n="proj5.p1"></li>
+              <li data-i18n="proj5.p2"></li>
+              <li data-i18n="proj5.p3"></li>
+              <li data-i18n="proj5.p4"></li>
+              <li data-i18n="proj5.p5"></li>
+              <li data-i18n="proj5.p6"></li>
+            </ul>
+          </div> -->
+          <div class="project-card-footer">
+            <div class="project-tags">
+              <span class="tag">ROS 2</span>
+              <span class="tag">TurtleBot3</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">BFS / A*</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Nikhiltogadiya/ros2_humble_grid_sokoban" target="_blank" class="project-link" title="GitHub">
+                <i data-lucide="github" style="width:18px;height:18px"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── Project 5: Autonomous Driving Projects ─── -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <div class="project-card-icon">🛣️</div>
+            <h3 class="project-card-title" data-i18n="proj6.title"></h3>
+            <p class="project-card-partner">🏫 Ostfalia Hochschule</p>
+            <p class="project-card-subtitle" data-i18n="proj6.subtitle"></p>
+            <p class="project-card-date">03/2025 – 07/2025</p>
+          </div>
+          <!-- <div class="project-card-body">
+            <ul>
+              <li data-i18n-html="proj6.p1"></li>
+              <li data-i18n="proj6.p2"></li>
+              <li data-i18n-html="proj6.p3"></li>
+              <li data-i18n="proj6.p4"></li>
+              <li data-i18n-html="proj6.p5"></li>
+              <li data-i18n="proj6.p6"></li>
+            </ul>
+          </div> -->
+          <div class="project-card-footer">
+            <div class="project-tags">
+              <span class="tag">Deep Reinforcement Learning</span>
+              <span class="tag">PPO</span>
+              <span class="tag">Dempster-Shafer</span>
+              <span class="tag">Sensor Fusion</span>
+              <span class="tag">ROS 2</span>
+              <span class="tag">Webots</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Nikhiltogadiya/Autonomous-Driving-Projects" target="_blank" class="project-link" title="GitHub">
+                <i data-lucide="github" style="width:18px;height:18px"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── Project 6: Energy Time Series Forecasting (WOBCOM) ─── -->
+        <div class="project-card fade-in">
+          <div class="project-card-header">
+            <div class="project-card-icon">⚡</div>
+            <h3 class="project-card-title" data-i18n="proj4.title"></h3>
+            <p class="project-card-partner">🏢 WOBCOM GmbH</p>
+            <p class="project-card-subtitle" data-i18n="proj4.subtitle"></p>
+            <p class="project-card-date" data-i18n="proj4.date"></p>
+          </div>
+          <!-- <div class="project-card-body">
+            <ul>
+              <li data-i18n="proj4.p1"></li>
+              <li data-i18n="proj4.p2"></li>
+              <li data-i18n="proj4.p3"></li>
+              <li data-i18n="proj4.p4"></li>
+              <li data-i18n="proj4.p5"></li>
+            </ul>
+          </div> -->
+          <div class="project-card-footer">
+            <div class="project-tags">
+              <span class="tag">TensorFlow</span>
+              <span class="tag">LSTM</span>
+              <span class="tag">Time Series</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Docker</span>
+            </div>
+            <div class="project-links"></div>
           </div>
         </div>
 
@@ -440,113 +528,93 @@
        SKILLS SECTION
        ============================================================ -->
   <section class="section" id="skills">
+
+
     <div class="container">
-      <h2 class="section-title fade-in">Technical <span class="highlight">Skills</span></h2>
-      <p class="section-subtitle fade-in">Technologies I work with daily</p>
+      <h2 class="section-title fade-in"><span data-i18n="skills.title"></span> <span class="highlight" data-i18n="skills.title.hl"></span></h2>
+      <p class="section-subtitle fade-in" data-i18n="skills.subtitle"></p>
 
       <div class="skills-categories">
 
         <div class="skill-category fade-in">
-          <h3 class="skill-category-title">💻 Programming Languages</h3>
+          <h3 class="skill-category-title" data-i18n="skills.cat1"></h3>
           <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">C++</span>
+            <span class="skill-tag" data-i18n="skills.c1.t1"></span>
+            <span class="skill-tag" data-i18n="skills.c1.t2"></span>
+            <span class="skill-tag" data-i18n="skills.c1.t3"></span>
+            <span class="skill-tag" data-i18n="skills.c1.t4"></span>
           </div>
         </div>
 
         <div class="skill-category fade-in">
-          <h3 class="skill-category-title">🧠 ML & Deep Learning / Data Science</h3>
+          <h3 class="skill-category-title" data-i18n="skills.cat2"></h3>
           <div class="skill-tags">
-            <span class="skill-tag">PyTorch</span>
-            <span class="skill-tag">TensorFlow</span>
-            <span class="skill-tag">HuggingFace Transformers</span>
-            <span class="skill-tag">scikit-learn</span>
-            <span class="skill-tag">XGBoost</span>
-            <span class="skill-tag">Transformer Architectures</span>
+            <span class="skill-tag" data-i18n="skills.c2.t1"></span>
+            <span class="skill-tag" data-i18n="skills.c2.t2"></span>
+            <span class="skill-tag" data-i18n="skills.c2.t3"></span>
+            <span class="skill-tag" data-i18n="skills.c2.t4"></span>
           </div>
         </div>
 
         <div class="skill-category fade-in">
-          <h3 class="skill-category-title">🤖 Generative AI & LLMs</h3>
+          <h3 class="skill-category-title" data-i18n="skills.cat3"></h3>
           <div class="skill-tags">
-            <span class="skill-tag">LLaMA</span>
-            <span class="skill-tag">OpenAI API</span>
-            <span class="skill-tag">LoRA / PEFT</span>
-            <span class="skill-tag">Prompt Engineering</span>
-            <span class="skill-tag">Constrained Decoding</span>
-            <span class="skill-tag">Syncode / DFA Token Masking</span>
-            <span class="skill-tag">Formal Grammar DSLs (.lark)</span>
-            <span class="skill-tag">Vision-Language Models</span>
+            <span class="skill-tag" data-i18n="skills.c3.t1"></span>
+            <span class="skill-tag" data-i18n="skills.c3.t2"></span>
+            <span class="skill-tag" data-i18n="skills.c3.t3"></span>
+            <span class="skill-tag" data-i18n="skills.c3.t4"></span>
           </div>
         </div>
 
         <div class="skill-category fade-in">
-          <h3 class="skill-category-title">🔗 Agentic AI & RAG</h3>
+          <h3 class="skill-category-title" data-i18n="skills.cat4"></h3>
           <div class="skill-tags">
-            <span class="skill-tag">LangChain</span>
-            <span class="skill-tag">LangGraph</span>
-            <span class="skill-tag">CrewAI</span>
-            <span class="skill-tag">PydanticAI</span>
-            <span class="skill-tag">OpenAI Agents SDK</span>
-            <span class="skill-tag">Tool-Use Orchestration</span>
-            <span class="skill-tag">ChromaDB</span>
-            <span class="skill-tag">FAISS</span>
-            <span class="skill-tag">Qdrant</span>
-            <span class="skill-tag">Sentence Transformers</span>
-            <span class="skill-tag">Semantic Retrieval</span>
-            <span class="skill-tag">Model Context Protocol</span>
-            <span class="skill-tag">Agent-to-Agent Protocol</span>
-            <span class="skill-tag">Confidence-Gated Prompting</span>
+            <span class="skill-tag" data-i18n="skills.c4.t1"></span>
+            <span class="skill-tag" data-i18n="skills.c4.t2"></span>
+            <span class="skill-tag" data-i18n="skills.c4.t3"></span>
+            <span class="skill-tag" data-i18n="skills.c4.t4"></span>
+            <span class="skill-tag" data-i18n="skills.c4.t5"></span>
+            <span class="skill-tag" data-i18n="skills.c4.t6"></span>
+            <span class="skill-tag" data-i18n="skills.c4.t7"></span>
+            <span class="skill-tag" data-i18n="skills.c4.t8"></span>
+            <span class="skill-tag" data-i18n="skills.c4.t9"></span>
+            <span class="skill-tag" data-i18n="skills.c4.t10"></span>
           </div>
         </div>
 
         <div class="skill-category fade-in">
-          <h3 class="skill-category-title">📝 NLP</h3>
+          <h3 class="skill-category-title" data-i18n="skills.cat5"></h3>
           <div class="skill-tags">
-            <span class="skill-tag">Text Generation</span>
-            <span class="skill-tag">Semantic Similarity</span>
-            <span class="skill-tag">Multilingual NLP</span>
-            <span class="skill-tag">Semantic Search</span>
-            <span class="skill-tag">Tokenization</span>
-            <span class="skill-tag">Evaluation (BLEU, SacreBLEU, ROUGE-L)</span>
+            <span class="skill-tag" data-i18n="skills.c5.t1"></span>
+            <span class="skill-tag" data-i18n="skills.c5.t2"></span>
+            <span class="skill-tag" data-i18n="skills.c5.t3"></span>
+            <span class="skill-tag" data-i18n="skills.c5.t4"></span>
+            <span class="skill-tag" data-i18n="skills.c5.t5"></span>
+            <span class="skill-tag" data-i18n="skills.c5.t6"></span>
+            <span class="skill-tag" data-i18n="skills.c5.t7"></span>
           </div>
         </div>
 
         <div class="skill-category fade-in">
-          <h3 class="skill-category-title">🚀 Deployment & Version Control Tools</h3>
+          <h3 class="skill-category-title" data-i18n="skills.cat6"></h3>
           <div class="skill-tags">
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">FastAPI</span>
-            <span class="skill-tag">Flask</span>
-            <span class="skill-tag">Streamlit</span>
-            <span class="skill-tag">Ollama</span>
-            <span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Jupyter</span>
-            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag" data-i18n="skills.c6.t1"></span>
+            <span class="skill-tag" data-i18n="skills.c6.t2"></span>
+            <span class="skill-tag" data-i18n="skills.c6.t3"></span>
+            <span class="skill-tag" data-i18n="skills.c6.t4"></span>
+            <span class="skill-tag" data-i18n="skills.c6.t5"></span>
+            <span class="skill-tag" data-i18n="skills.c6.t6"></span>
           </div>
         </div>
 
         <div class="skill-category fade-in">
-          <h3 class="skill-category-title">📊 Data & Libraries</h3>
+          <h3 class="skill-category-title" data-i18n="skills.cat7"></h3>
           <div class="skill-tags">
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">Matplotlib</span>
-            <span class="skill-tag">Plotly</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">Feature Engineering</span>
-          </div>
-        </div>
-
-        <div class="skill-category fade-in">
-          <h3 class="skill-category-title">👁️ Computer Vision</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">OpenCV</span>
-            <span class="skill-tag">YOLO</span>
-            <span class="skill-tag">Multi-View Verification</span>
+            <span class="skill-tag" data-i18n="skills.c7.t1"></span>
+            <span class="skill-tag" data-i18n="skills.c7.t2"></span>
+            <span class="skill-tag" data-i18n="skills.c7.t3"></span>
+            <span class="skill-tag" data-i18n="skills.c7.t4"></span>
+            <span class="skill-tag" data-i18n="skills.c7.t5"></span>
           </div>
         </div>
 
@@ -560,26 +628,26 @@
        ============================================================ -->
   <section class="section section-alt" id="education">
     <div class="container">
-      <h2 class="section-title fade-in">Education</h2>
-      <p class="section-subtitle fade-in">My academic journey</p>
+      <h2 class="section-title fade-in" data-i18n="edu.title"></h2>
+      <p class="section-subtitle fade-in" data-i18n="edu.subtitle"></p>
 
       <div class="education-cards">
 
         <div class="education-card fade-in">
           <div class="education-icon">🎓</div>
           <div class="education-info">
-            <h3>M.Sc. Digital Technology</h3>
+            <h3 data-i18n="edu1.degree"></h3>
             <p class="school">Ostfalia Hochschule für angewandte Wissenschaften</p>
-            <p class="edu-meta">📍 Wolfenbüttel, Germany &nbsp;|&nbsp; 09/2023 – Present</p>
+            <p class="edu-meta" data-i18n="edu1.meta"></p>
           </div>
         </div>
 
         <div class="education-card fade-in">
           <div class="education-icon">🎓</div>
           <div class="education-info">
-            <h3>Bachelor in Computer Application</h3>
+            <h3 data-i18n="edu2.degree"></h3>
             <p class="school">S.V. Patel College of Computer Science and Business Management</p>
-            <p class="edu-meta">📍 Surat, India &nbsp;|&nbsp; 06/2019 – 03/2022</p>
+            <p class="edu-meta" data-i18n="edu2.meta"></p>
           </div>
         </div>
 
@@ -639,21 +707,21 @@
        ============================================================ -->
   <section class="section" id="contact">
     <div class="container">
-      <h2 class="section-title fade-in">Get In <span class="highlight">Touch</span></h2>
-      <p class="section-subtitle fade-in">Have questions or want to collaborate? Let's connect!</p>
+      <h2 class="section-title fade-in"><span data-i18n="contact.title"></span> <span class="highlight" data-i18n="contact.title.hl"></span></h2>
+      <p class="section-subtitle fade-in" data-i18n="contact.subtitle"></p>
 
       <div class="contact-container fade-in">
         <div class="contact-info">
-          <h3>Let's Talk</h3>
-          <p>I'm always interested in discussing new projects, opportunities, or just chatting about AI/ML.</p>
-          
+          <h3 data-i18n="contact.heading"></h3>
+          <p data-i18n="contact.desc"></p>
+
           <div class="contact-methods">
             <a href="mailto:nikhil.togadiya@outlook.com" class="contact-method">
               <div class="contact-method-icon">
                 <i data-lucide="mail" style="width:24px;height:24px"></i>
               </div>
               <div class="contact-method-info">
-                <h4>Email</h4>
+                <h4 data-i18n="contact.email.label"></h4>
                 <p>nikhil.togadiya@outlook.com</p>
               </div>
             </a>
@@ -663,8 +731,8 @@
                 <i data-lucide="linkedin" style="width:24px;height:24px"></i>
               </div>
               <div class="contact-method-info">
-                <h4>LinkedIn</h4>
-                <p>Connect with me professionally</p>
+                <h4 data-i18n="contact.linkedin.label"></h4>
+                <p data-i18n="contact.linkedin.desc"></p>
               </div>
             </a>
 
@@ -673,25 +741,25 @@
                 <i data-lucide="github" style="width:24px;height:24px"></i>
               </div>
               <div class="contact-method-info">
-                <h4>GitHub</h4>
-                <p>Check out my code</p>
+                <h4 data-i18n="contact.github.label"></h4>
+                <p data-i18n="contact.github.desc"></p>
               </div>
             </a>
           </div>
         </div>
 
         <div class="contact-cta">
-          <div class="contact-cta-box">
-            <h3>🚀 Open to Opportunities</h3>
-            <p>Currently seeking full-time roles in:</p>
+          <div class="contact-cta-box glow-border">
+            <h3 data-i18n="contact.cta.title"></h3>
+            <p data-i18n="contact.cta.desc"></p>
             <ul>
-              <li>AI/ML Engineering</li>
-              <li>Agentic AI & Multi-Agent Systems</li>
-              <li>Generative AI & LLMs</li>
-              <li>Research & Development</li>
+              <li data-i18n="contact.cta.li1"></li>
+              <li data-i18n="contact.cta.li2"></li>
+              <li data-i18n="contact.cta.li3"></li>
+              <li data-i18n="contact.cta.li4"></li>
             </ul>
             <a href="mailto:nikhil.togadiya@outlook.com?subject=Opportunity%20Discussion" class="btn btn-primary">
-              <i data-lucide="send" style="width:18px;height:18px"></i> Send Message
+              <i data-lucide="send" style="width:18px;height:18px"></i> <span data-i18n="contact.cta.btn"></span>
             </a>
           </div>
         </div>
@@ -707,8 +775,8 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-info">
-          <h3><span style="color:var(--primary)">&lt;</span>Nikhil Togadiya<span style="color:var(--primary)">/&gt;</span></h3>
-          <p>AI/ML Engineer · Agentic AI & Generative AI</p>
+          <h3>&lt;Nikhil Togadiya/&gt;</h3>
+          <p data-i18n="footer.tagline"></p>
         </div>
         <div class="footer-social">
           <a href="https://linkedin.com/in/nikhil-togadiya/" target="_blank" aria-label="LinkedIn">
@@ -723,7 +791,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> Nikhil Togadiya. Built with ❤️ and code.</p>
+        <p>&copy; <span id="year"></span> <span data-i18n="footer.copyright"></span></p>
       </div>
     </div>
   </footer>
@@ -736,8 +804,9 @@
 
 
   <!-- JavaScript -->
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
-  <!-- Initialize Lucide Icons -->
+<!-- Initialize Lucide Icons -->
   <script>lucide.createIcons();</script>
 
 </body>
