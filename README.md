@@ -71,8 +71,8 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=Nikhiltogadiya&theme=darkhub&no-bg=true&no-frame=true&column=7" />
-    <img alt="Trophies" src="https://github-profile-trophy.vercel.app/?username=Nikhiltogadiya&theme=flat&no-bg=true&no-frame=true&column=7&title_color=3B82F6" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-trophies.vercel.app/?username=Nikhiltogadiya&theme=darkhub&no-bg=true&no-frame=true&column=7" />
+    <img alt="Trophies" src="https://github-trophies.vercel.app/?username=Nikhiltogadiya&theme=flat&no-bg=true&no-frame=true&column=7&title_color=3B82F6" />
   </picture>
 </div>
 
