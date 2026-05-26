@@ -42,7 +42,7 @@ const translations = {
     'about.card3.title': 'Production ML',
     'about.card3.desc':  'Docker, FastAPI, end-to-end pipelines',
     'about.card4.title': 'Industry Partners',
-    'about.card4.desc':  'Volkswagen, WOBCOM, Ostfalia',
+    'about.card4.desc':  'Volkswagen, WOBCOM',
 
     /* Experience */
     'exp.title':    'Professional',
@@ -131,6 +131,12 @@ const translations = {
     'proj6.p4': 'Handles noisy sensor data gracefully in ROS 2 / Webots.',
     'proj6.p5': '<strong>Adaptive Cruise Control (IDM):</strong> Built a longitudinal ACC using the Intelligent Driver Model with radar data.',
     'proj6.p6': 'Maintains safe following distance and adjusts speed automatically.',
+
+    'proj7.title':    'Leitstand | Rail Project Status & Compliance Assistant',
+    'proj7.subtitle': 'Grounded generative-AI assistant paired with a deterministic rules engine, built to prevent hallucinated compliance verdicts',
+
+    'proj8.title':    'KI-Check | AI-Powered Approbation Assistant',
+    'proj8.subtitle': 'FastAPI document-verification pipeline with a deterministic rules engine for German medical-licensing applications — compliance verdicts are never left to the LLM',
 
     /* Skills */
     'skills.title':    'Technical',
@@ -260,7 +266,7 @@ const translations = {
     'about.card3.title': 'Produktions ML',
     'about.card3.desc':  'Docker, FastAPI, End-to-End Pipelines',
     'about.card4.title': 'Industriepartner',
-    'about.card4.desc':  'Volkswagen, WOBCOM, Ostfalia',
+    'about.card4.desc':  'Volkswagen, WOBCOM',
 
     /* Experience */
     'exp.title':    'Berufliche',
@@ -349,6 +355,12 @@ const translations = {
     'proj6.p4': 'Kommt mit verrauschten Sensordaten in ROS 2 / Webots gut klar.',
     'proj6.p5': '<strong>Adaptiver Tempomat (IDM):</strong> Längsregelungs ACC mit dem Intelligent Driver Model und Radardaten gebaut.',
     'proj6.p6': 'Hält sicheren Abstand und passt die Geschwindigkeit automatisch an.',
+
+    'proj7.title':    'Leitstand | Projektstatus- und Compliance-Assistent für Bahnprojekte',
+    'proj7.subtitle': 'Faktenbasierter Generative-KI-Assistent mit deterministischer Regel-Engine gegen halluzinierte Compliance-Bewertungen',
+
+    'proj8.title':    'KI-Check | KI-gestützter Approbations-Assistent',
+    'proj8.subtitle': 'FastAPI-Pipeline mit deterministischer Regel-Engine zur Dokumentenprüfung für Approbationsanträge — Compliance-Entscheidungen trifft nie das LLM',
 
     /* Skills */
     'skills.title':    'Technische',

@@ -37,6 +37,8 @@
 | --- | ------- | ------------ |
 | 🏭 | [Text2CAD](https://github.com/Nikhiltogadiya/Text2CAD) | Multi-agent pipeline converting natural language into manufacturable 3D CAD models |
 | 🚙 | [Autonomous Driving Projects](https://github.com/Nikhiltogadiya/Autonomous-Driving-Projects) | Deep RL, sensor fusion & adaptive cruise control mini-projects |
+| 🚆 | [Leitstand](https://leitstand.proudforest-362f8121.italynorth.azurecontainerapps.io) | Bilingual GenAI assistant + deterministic rules engine for rail-project compliance — the LLM cites facts, never decides verdicts |
+| 🩺 | [KI-Check](https://ki-check.proudforest-362f8121.italynorth.azurecontainerapps.io/) | FastAPI document-verification assistant for German medical-licensing (Approbation) applications, with a deterministic rules engine deciding every verdict |
 | 🤖 | [approbation-ai](https://github.com/Nikhiltogadiya/approbation-ai) | AI-powered multi-agent system for document approval workflows |
 | 🎮 | [ROS 2 Grid Sokoban](https://github.com/Nikhiltogadiya/ros2_humble_grid_sokoban) | Camera-based ROS 2 robot navigating and solving a Sokoban grid puzzle |
 | 🔤 | [Seq2Seq + Bahdanau Attention](https://github.com/Nikhiltogadiya/seq2seq-bahdanau-attention-beam-search) | Sequence-to-sequence model with Bahdanau attention and beam search decoding |
