@@ -10,6 +10,7 @@ const translations = {
     'nav.projects':   'Projects',
     'nav.skills':     'Skills',
     'nav.education':  'Education',
+    'nav.publications': 'Publications',
     'nav.contact':    'Contact',
 
     /* Hero */
@@ -203,6 +204,18 @@ const translations = {
     'edu2.degree': 'Bachelor in Computer Application',
     'edu2.meta':   '📍 Surat, India \u00a0|\u00a0 06/2019 – 03/2022',
 
+    /* Publications */
+    'pub.title':    'Research',
+    'pub.title.hl': 'Publications',
+    'pub.subtitle': 'Survey work I authored alongside building agents',
+    'pub.tag':      'Survey Paper',
+    'pub1.title':   'Library Learning for LLM Agents: A Survey of Skill Acquisition Through Growing Toolboxes',
+    'pub1.excerpt': 'A survey of how LLM agents move beyond static, one-shot tool use and start building their own library of skills: discovering new capabilities, keeping them in a growing toolbox, and reusing them across tasks. Reviews 11 frameworks (Voyager, ReGAL, LEGO-Prover, and others) across web, code, game, and robotics domains, and introduces a taxonomy covering skill discovery, retention, reuse, and management.',
+    'pub1.meta':    '31 pages, CORE, Technical University of Clausthal',
+    'pub1.btn.view':     'View PDF',
+    'pub1.btn.download': 'Download',
+    'pub.ghost':    'Next paper is in the works ✍️',
+
     /* Contact */
     'contact.title':    'Get In',
     'contact.title.hl': 'Touch',
@@ -234,6 +247,7 @@ const translations = {
     'nav.projects':   'Projekte',
     'nav.skills':     'Fähigkeiten',
     'nav.education':  'Ausbildung',
+    'nav.publications': 'Publikationen',
     'nav.contact':    'Kontakt',
 
     /* Hero */
@@ -426,6 +440,18 @@ const translations = {
     'edu1.meta':   '📍 Wolfenbüttel, Deutschland \u00a0|\u00a0 09/2023 – Heute',
     'edu2.degree': 'Bachelor in Computer Application',
     'edu2.meta':   '📍 Surat, Indien \u00a0|\u00a0 06/2019 – 03/2022',
+
+    /* Publications */
+    'pub.title':    'Forschung',
+    'pub.title.hl': 'Publikationen',
+    'pub.subtitle': 'Survey-Arbeit, entstanden neben dem Bauen von Agenten',
+    'pub.tag':      'Survey-Paper',
+    'pub1.title':   'Library Learning for LLM Agents: A Survey of Skill Acquisition Through Growing Toolboxes',
+    'pub1.excerpt': 'Ein Survey darüber, wie LLM-Agenten über statische Ein-Schritt-Tool-Nutzung hinauswachsen und stattdessen kontinuierlich neue Fähigkeiten entdecken, sie in einer wachsenden Toolbox behalten und über Aufgaben hinweg wiederverwenden. Der Survey vergleicht 11 Frameworks (Voyager, ReGAL, LEGO-Prover u.a.) aus den Bereichen Web, Code, Spiele und Robotik und führt eine Taxonomie für Skill-Discovery, -Retention, -Reuse und -Management ein.',
+    'pub1.meta':    '31 Seiten, CORE, TU Clausthal',
+    'pub1.btn.view':     'PDF ansehen',
+    'pub1.btn.download': 'Herunterladen',
+    'pub.ghost':    'Das nächste Paper ist in Arbeit ✍️',
 
     /* Contact */
     'contact.title':    'Kontakt',

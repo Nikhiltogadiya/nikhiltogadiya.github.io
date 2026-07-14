@@ -914,6 +914,51 @@ img { max-width: 100%; display: block; }
   font-size: 1.1rem;
 }
 
+/* ---------- PUBLICATIONS ---------- */
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.publication-ghost-slot {
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 2rem;
+  color: var(--text-muted);
+  min-height: 100%;
+}
+.publication-ghost-slot svg { stroke: var(--text-muted); }
+.publication-ghost-slot span { font-size: 0.85rem; font-weight: 600; }
+
+.publication-card-authors {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.publication-card-affiliation {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.publication-card-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.publication-card-actions .btn {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+}
+
 /* ---------- CONTACT SECTION ---------- */
 .contact-container {
   display: grid;
@@ -1153,6 +1198,7 @@ img { max-width: 100%; display: block; }
   .skills-categories { grid-template-columns: 1fr; }
   .education-cards { grid-template-columns: 1fr; }
   .blog-grid { grid-template-columns: 1fr; }
+  .publications-grid { grid-template-columns: 1fr; }
   .contact-container { grid-template-columns: 1fr; gap: 2rem; }
 
   .section { padding: 60px 0; }

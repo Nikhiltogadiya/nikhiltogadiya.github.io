@@ -59,6 +59,7 @@
         <li><a href="#projects" data-i18n="nav.projects"></a></li>
         <!-- <li><a href="#skills" data-i18n="nav.skills"></a></li> -->
         <li><a href="#education" data-i18n="nav.education"></a></li>
+        <li><a href="#publications" data-i18n="nav.publications"></a></li>
         <!-- <li><a href="#blog">Blog</a></li> -->
         <li><a href="#contact" data-i18n="nav.contact"></a></li>
         <!--
@@ -744,9 +745,57 @@
 
       </div>
       -->
-<!-- 
+<!--
     </div>
   </section> -->
+
+
+  <!-- ============================================================
+       PUBLICATIONS SECTION
+       ════════════════════════════════════════════════════════════
+       HOW TO ADD A NEW PUBLICATION:
+       1. Copy the PDF into assets/papers/.
+       2. Copy one <div class="blog-card publication-card"> block below.
+       3. Paste it inside <div class="publications-grid">.
+       4. Update title/authors/affiliation/excerpt and both hrefs.
+       ============================================================ -->
+  <section class="section" id="publications">
+    <div class="container">
+      <h2 class="section-title fade-in"><span data-i18n="pub.title"></span> <span class="highlight" data-i18n="pub.title.hl"></span></h2>
+      <p class="section-subtitle fade-in" data-i18n="pub.subtitle"></p>
+
+      <div class="publications-grid">
+
+        <div class="blog-card publication-card fade-in">
+          <div class="blog-card-image">📄</div>
+          <div class="blog-card-content">
+            <span class="blog-card-tag" data-i18n="pub.tag"></span>
+            <h3 class="blog-card-title" data-i18n="pub1.title"></h3>
+            <p class="publication-card-authors">Nikhil Togadiya, Tobias Sesterhenn, Christian Bartelt</p>
+            <p class="publication-card-affiliation">CORE, Technical University of Clausthal, Clausthal-Zellerfeld, Germany</p>
+            <p class="blog-card-excerpt" data-i18n="pub1.excerpt"></p>
+            <p class="blog-card-meta" data-i18n="pub1.meta"></p>
+            <div class="publication-card-actions">
+              <a href="assets/papers/library-learning-llm-agents-survey.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+                <i data-lucide="file-text" style="width:16px;height:16px"></i>
+                <span data-i18n="pub1.btn.view"></span>
+              </a>
+              <a href="assets/papers/library-learning-llm-agents-survey.pdf" download class="btn btn-outline">
+                <i data-lucide="download" style="width:16px;height:16px"></i>
+                <span data-i18n="pub1.btn.download"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-ghost-slot fade-in">
+          <i data-lucide="pen-line" style="width:28px;height:28px"></i>
+          <span data-i18n="pub.ghost"></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
   <!-- ============================================================
