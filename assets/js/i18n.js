@@ -51,7 +51,7 @@ const translations = {
     'exp.subtitle': 'Where I\'ve put AI to work',
 
     'exp1.role':    'Werkstudent (AI/Robotics)',
-    'exp1.date':    '09/2024 – Present',
+    'exp1.date':    '09/2024 – 05/2026',
     'exp1.location':'📍 Wolfenbüttel, Germany',
     'exp1.desc': 'Designed and built an autonomous multi-agent museum guide running on Temi robots, covering RAG retrieval, multilingual prompting, the pytemi control library, and driving the system toward production.',
     'exp1.p1': 'Built a multi-agent AI museum guide on 2 Temi robots using RAG retrieval (HuggingFace embeddings + vector DB).',
@@ -288,7 +288,7 @@ const translations = {
     'exp.subtitle': 'Wo ich KI in die Praxis gebracht habe',
 
     'exp1.role':    'Werkstudent (KI/Robotik)',
-    'exp1.date':    '09/2024 – Heute',
+    'exp1.date':    '09/2024 – 05/2026',
     'exp1.location':'📍 Wolfenbüttel, Deutschland',
     'exp1.desc': 'Autonomen Multi-Agenten-Museumsführer auf Temi-Robotern konzipiert und gebaut, von RAG-Retrieval und mehrsprachigem Prompting bis hin zur pytemi-Steuerungsbibliothek und dem Weg in die Produktion.',
     'exp1.p1': 'Multi-Agenten KI Museumsführer auf 2 Temi Robotern mit RAG-Retrieval (HuggingFace Embeddings + Vektordatenbank) gebaut.',
