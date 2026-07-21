@@ -120,10 +120,17 @@
   <script>
     document.getElementById('requested-path').textContent = location.pathname;
 
-    // Old deep links under the previous project-site path go straight home —
-    // no reason to make those visitors wait.
-    if (/^\/Nikhiltogadiya\/?/i.test(location.pathname)) {
-      location.replace('/' + location.search + location.hash);
+    // The site's file layout did not change during the rename — it only moved up
+    // one level, out of /Nikhiltogadiya/ and onto the domain root. So every old
+    // deep link maps 1:1 onto a new one by stripping that prefix:
+    //   /Nikhiltogadiya/assets/papers/x.pdf  ->  /assets/papers/x.pdf
+    // Sending these to "/" instead would strand people on the homepage.
+    // The (?=\/|$) lookahead keeps an unrelated path like /NikhiltogadiyaFoo intact.
+    var OLD_PREFIX = /^\/Nikhiltogadiya(?=\/|$)/i;
+
+    if (OLD_PREFIX.test(location.pathname)) {
+      var target = location.pathname.replace(OLD_PREFIX, '') || '/';
+      location.replace(target + location.search + location.hash);
     } else {
       // Everything else gets a readable message first, then a gentle bounce.
       var left = 5;
