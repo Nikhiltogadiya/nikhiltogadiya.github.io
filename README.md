@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Dynamic Typing Header -->
-<a href="https://nikhiltogadiya.github.io/Nikhiltogadiya/">
+<a href="https://nikhiltogadiya.github.io/">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=3B82F6&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Hi+%F0%9F%91%8B+I'm+Nikhil+Togadiya;AI%2FML+Engineer+%7C+Agentic+AI+%26+Generative+AI" alt="Typing SVG" />
 </a>
 
@@ -15,7 +15,7 @@
   <a href="https://linkedin.com/in/nikhil-togadiya/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://nikhiltogadiya.github.io/Nikhiltogadiya/">
+  <a href="https://nikhiltogadiya.github.io/">
     <img src="https://img.shields.io/badge/Portfolio-3B82F6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
   </a>
   <a href="mailto:nikhil.togadiya@outlook.com">
@@ -92,7 +92,7 @@
 ---
 
 <div align="center">
-  <a href="https://nikhiltogadiya.github.io/Nikhiltogadiya/">
+  <a href="https://nikhiltogadiya.github.io/">
     <img src="https://img.shields.io/badge/🌐_Visit_My_Portfolio-3B82F6?style=for-the-badge" alt="Portfolio" />
   </a>
 </div>
